@@ -7,7 +7,7 @@ type Props = {};
 const Header = (props: Props) => {
   return (
     //    Left header
-    <header className="sticky p-5 top-0 flex items-center justify-around w-full mx-auto z-20 bg-[#D4D7E1]">
+    <header className="sticky p-2 top-0 flex items-center justify-around w-full mx-auto z-20 bg-[#D4D7E1]">
       <div className="text-4xl rounded-md border-[#EF7A0E] border-2 p-5 flex items-center">
         <span className="text-[#EF7A0E]">J</span>D
       </div>
@@ -17,7 +17,7 @@ const Header = (props: Props) => {
       <div className="flex flex-row items-center">
         <ul className="flex flex-row ">
           {NAV__LINKS.map((item) => (
-            <Link href={item.path} className="m-5 text-lg">
+            <Link href={item.path} className="m-5 text-lg ">
               {item.display}
             </Link>
           ))}
