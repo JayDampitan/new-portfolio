@@ -1,19 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+
 type Props = {};
 
 const BackgroundCircles = (props: Props) => {
   return (
     <motion.div
       animate={{
-        scale: [0.6, 1.1, 1.1, 1.2, 1, 0.8, 0.6],
-        opacity: [0.1, 0.2, 0.4, 0.8, 0.1, 1.0],
-        borderRadius: ["20%", "25%", "50%", "60%", "50%", "25%", "20%"],
+        scale: [0.6, 1, 1, 1, 0.8, 0.8],
+        opacity: [0.1, 0.2, 0.4, 0.6, 0.8, 0.5],
+        borderRadius: ["20%", "25%", "50%", "50%", "25%", "20%"],
       }}
       transition={{
         duration: 6,
-        delay: 2,
       }}
       className="absolute top-25 right-26 flex justify-center items-center"
     >

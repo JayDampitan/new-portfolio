@@ -3,22 +3,22 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import self from "../assets/portfolio.jpg";
+import BackgroundCircles from "./BackgroundCircles";
 
 type Props = {};
 
 const About = (props: Props) => {
   return (
-    <motion.div className="h-screen w-full flex flex-col-reverse  bg-[#D4D7E1] [#EF7A0E] xl:flex-row">
+    <motion.div className=" h-screen w-full flex flex-col-reverse  bg-[#D4D7E1] [#EF7A0E] xl:pt-40 xl:flex-row">
       {/* Left About Section */}
-      <div className=" w-full h-[80%] p-20  flex flex-col items-start justify-center xl:w-[50%] xl:pl-64">
-        <h3 className="text-2xl xl:text-4xl mb-3">
+      <div className=" w-full h-[80%] px-10 flex flex-col items-start justify-center xl:w-[50%] xl:pl-64">
+        <h3 className="text-2xl text-[#EF7A0E] xl:text-4xl mb-3">
           <span className=" section-subtitle"></span> About me
         </h3>
-        <h2 className="text-5xl xl:text-6xl mb-2 font-semibold">
-          Let's talk about your next project
+        <h2 className="text-4xl xl:text-6xl mb-2 font-semibold">
+          What's your new project?
         </h2>
-        <h3 className="text-3xl xl:text-4xl mb-4">Software Developer</h3>
-        <p className=" max-w-[800px] xl:text-xl mb-5">
+        <p className=" max-w-[800px] xl:text-xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
           laudantium cumque quo exercitationem aliquam eligendi ipsum odit vitae
           nobis porro.
@@ -32,12 +32,25 @@ const About = (props: Props) => {
       </div>
 
       {/* Right About Section */}
-      <div className="relative flex w-full h-[80%] items-center justify-center xl:w-[50%] xl:h-[80%]">
+      <div className=" relative flex w-full h-[80%] items-center justify-center xl:w-[50%] xl:h-[80%]">
         <Image
-          className="h-60 w-60 rounded-full z-10 flex items-center justify-center xl:h-[400px] xl:w-[400px]"
+          className="border-2 border-blue-500 absolute flex items-center justify-center top-20 left-20 h-[120px] w-[120px] xl:top-10 lg:left-48  rounded-full z-10  lg:h-[280px] lg:w-[280px]"
           src={self}
           alt=""
         />
+        <Image
+          className="border-2 border-yellow-500 absolute h-[180px] w-[180px] bottom-10 left-30 rounded-full z-10 flex items-center justify-center lg:bottom-0 lg:h-[380px] lg:w-[380px]"
+          src={self}
+          alt=""
+        />
+        <Image
+          className="border-2 border-green-500 absolute h-[80px] w-[80px] top-28 right-16 rounded-full z-10 flex items-center justify-center lg:top-26 lg:right-28 xl:right-80  lg:h-[200px] lg:w-[200px]"
+          src={self}
+          alt=""
+        />
+        {/* <BackgroundCircles /> */}
+        <div className="absolute border border-[#736969] rounded-full h-[100px] w-[100px] xl:h-[300px] xl:w-[300px]" />
+        <div className="absolute border border-[#c8aa6a] rounded-full h-[200px] w-[200px] xl:h-[500px] xl:w-[500px]" />
       </div>
     </motion.div>
   );

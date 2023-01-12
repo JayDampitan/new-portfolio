@@ -18,7 +18,6 @@ export default function Home() {
       </Head>
 
       <Header />
-
       <section id="/" className="">
         <Hero />
       </section>
