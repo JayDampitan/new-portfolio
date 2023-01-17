@@ -22,7 +22,7 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id="skills" className="">
+      <section id="skills" className="snap snap-mandatory">
         <Skills />
       </section>
 

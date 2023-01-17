@@ -11,8 +11,8 @@ const About = (props: Props) => {
   return (
     <motion.div className=" h-screen w-full flex flex-col-reverse  bg-[#D4D7E1] [#EF7A0E] xl:pt-40 xl:flex-row">
       {/* Left About Section */}
-      <div className=" w-full h-[80%] px-10 flex flex-col items-start justify-center xl:w-[50%] xl:pl-64">
-        <h3 className="text-2xl text-[#EF7A0E] xl:text-4xl mb-3">
+      <div className=" w-full h-[80%] px-10 flex flex-col items-start justify-center lg:w-[50%] lg:pl-64">
+        <h3 className="text-2xl text-[#EF7A0E] lg:text-4xl mb-3">
           <span className=" section-subtitle"></span> About me
         </h3>
         <h2 className="text-4xl xl:text-6xl mb-2 font-semibold">
@@ -34,17 +34,17 @@ const About = (props: Props) => {
       {/* Right About Section */}
       <div className=" relative flex w-full h-[80%] items-center justify-center xl:w-[50%] xl:h-[80%]">
         <Image
-          className="border-2 border-blue-500 absolute flex items-center justify-center top-20 left-20 h-[120px] w-[120px] xl:top-10 lg:left-48  rounded-full z-10  lg:h-[280px] lg:w-[280px]"
+          className="border-2 border-blue-500 absolute flex items-center justify-center top-20 left-20 h-[120px] w-[120px] xl:top-10 lg:left-52  rounded-full z-10  lg:h-[260px] lg:w-[260px]"
           src={self}
           alt=""
         />
         <Image
-          className="border-2 border-yellow-500 absolute h-[180px] w-[180px] bottom-10 left-30 rounded-full z-10 flex items-center justify-center lg:bottom-0 lg:h-[380px] lg:w-[380px]"
+          className="border-2 border-yellow-500 absolute h-[180px] w-[180px] bottom-10 left-30 rounded-full z-10 flex items-center justify-center lg:bottom-0 lg:h-[350px] lg:w-[350px]"
           src={self}
           alt=""
         />
         <Image
-          className="border-2 border-green-500 absolute h-[80px] w-[80px] top-28 right-16 rounded-full z-10 flex items-center justify-center lg:top-26 lg:right-28 xl:right-80  lg:h-[200px] lg:w-[200px]"
+          className="border-2 border-green-500 absolute h-[80px] w-[80px] top-28 right-16 rounded-full z-10 flex items-center justify-center lg:top-26 lg:right-64 lg:h-[200px] lg:w-[200px]"
           src={self}
           alt=""
         />

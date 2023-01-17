@@ -6,7 +6,7 @@ type Props = {};
 
 const Skills = (props: Props) => {
   return (
-    <motion.div className=" p-2 h-screen w-full flex flex-col-reverse items-center justify-center bg-[#D4D7E1] [#EF7A0E] xl:flex-row">
+    <motion.div className="snap-center p-2 h-screen w-full flex flex-col-reverse items-center justify-center bg-[#D4D7E1] [#EF7A0E] xl:flex-row">
       {/* Left Hero Section */}
 
       <div className=" w-full h-[80%] px-10  flex flex-col items-start justify-center xl:w-[50%] xl:pl-64">

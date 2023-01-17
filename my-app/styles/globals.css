@@ -21,4 +21,18 @@
         background: #EF7A0E;
         color: #EF7A0E;
       }
+
+      #main-hero:hover .cursor {
+        transform: scale(5)
+      }
+
+      .cursor {
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        position: fixed;
+        border-radius: 50%;
+        pointer-events: none;
+        mix-blend-mode: difference;
+      }
 }
