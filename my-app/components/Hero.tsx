@@ -16,8 +16,7 @@ const Hero = (props: Props) => {
       setCursorX(e.pageX);
       setCursorY(e.pageY);
     });
-  }, [cursorX, cursorY])
- 
+  }, [cursorX, cursorY]);
 
   return (
     <motion.div
