@@ -4,7 +4,8 @@ type Props = {}
 
 const Contact = (props: Props) => {
   return (
-    <div className='h-screen '>Contact</div>
+    <div className='h-screen'><h2 className="text-red-500 text-7xl">
+      Contact Page</h2></div>
   )
 }
 
