@@ -6,7 +6,7 @@ type Props = {};
 
 const Skills = (props: Props) => {
   return (
-    <div className="h-screen bg-black">
+    <div className="h-screen bg-black flex items-center">
       <h2 className="text-red-500 text-7xl">Skills</h2>
     </div>
   );

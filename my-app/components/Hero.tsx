@@ -20,7 +20,7 @@ const Hero = (props: Props) => {
   // }, [cursorX, cursorY]);
 
   return (
-    <div  className="h-screen">
+    <div  className="h-screen flex items-center">
       <h2 className="text-red-500 text-7xl">Hero Page</h2>
     </div>
   );

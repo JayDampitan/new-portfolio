@@ -1,12 +1,13 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const Contact = (props: Props) => {
   return (
-    <div className='h-screen'><h2 className="text-red-500 text-7xl">
-      Contact Page</h2></div>
-  )
-}
+    <div className="h-screen flex items-center">
+      <h2 className="text-red-500 text-7xl">Contact Page</h2>
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;
