@@ -2,7 +2,6 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
-import Skills from "../components/Skills";
 import Work from "../components/Work";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -20,10 +19,6 @@ export default function Home() {
       <Navbar />
       <section id="/" className="">
         <Hero />
-      </section>
-
-      <section id="skills" className="snap snap-mandatory">
-        <Skills />
       </section>
 
       <section id="about" className="">
