@@ -3,7 +3,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { NAV__LINKS } from "../assets/data";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { BsFillSunFill } from "react-icons/bs";
+import { motion } from "framer-motion";
+import { WiMoonAltThirdQuarter } from "react-icons/wi";
+import SmallCirlces from "./SmallCircles";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 type Props = {};
 
@@ -15,41 +18,54 @@ const Navbar = (props: Props) => {
   };
 
   return (
-    <nav className="fixed left-0 bg-[#1D1D1D]  top-0 w-full z-10 ease-in duration-500">
-      <div className="max-w-[1240px] text-gray-400 m-auto flex justify-between items-center px-6 py-2">
+    <nav className="fixed left-0 bg-transparent top-0 w-full z-10 ease-in duration-500">
+      <div className="max-w-[1600px] text-gray-400 m-auto flex justify-between items-center px-6 py-3">
         <Link href="/">
-          <h1 className="text-4xl font-bold text-white">
-            j<span className="text-darkBlue">d</span>.
+          <h1 className="text-3xl md:text-4xl font-bold text-white">
+            jd<span className="text-light-brown">.</span>
           </h1>
         </Link>
         <ul className="hidden sm:flex items-center justify-center">
           {NAV__LINKS.map((item) => (
             <li onClick={handleNav} className="p-4">
-              <Link className="text-white" href={item.path}>{item.display}</Link>
+              <Link className="text-white" href={item.path}>
+                {item.display}
+              </Link>
             </li>
           ))}
           <Link
             href="/"
-            className=" border-l-[1px] border-white px-4 hover:text-[#BB2626]"
+            className=" border-l-[1px] border-white px-4 hover:text-light-brown"
           >
-            <div className="text-white text-1xl hover:white px-2 hover:text-[#BB2626] duration-300">
-              Resumé
+            <div className="text-white text-1xl hover:white px-2 hover:text-light-brown duration-300">
+              resumé
             </div>
           </Link>
+          <div className="relative">
+            <SmallCirlces />
+            <WiMoonAltThirdQuarter className="text-white" />
+          </div>
         </ul>
 
-        <div onClick={handleNav} className="block sm:hidden z-10 text-white">
+        <motion.div
+          onClick={handleNav}
+          className="block sm:hidden z-10 text-xl text-white "
+        >
           {navbarOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
-        </div>
+        </motion.div>
+
         {/* mobile menu */}
         <div
           className={`${
             navbarOpen ? "left-0" : "left-full"
-          } sm:hidden absolute top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[#1D1D1D] text-center ease-in duration-500`}
+          }  sm:hidden absolute top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[#1D1D1D] text-center ease-in-out duration-1000`}
         >
-          <ul>
+          <ul className="flex-col flex justify-center items-center">
             {NAV__LINKS.map((item) => (
-              <li key={item.path} className="p-4 text-2xl hover:text-white text-white">
+              <li
+                key={item.path}
+                className="p-4 text-2xl hover:text-white text-white"
+              >
                 <Link
                   onClick={() => setNavbarOpen(!navbarOpen)}
                   href={item.path}
@@ -58,9 +74,26 @@ const Navbar = (props: Props) => {
                 </Link>
               </li>
             ))}
-            <div className="h-[6px] bg-white w-[6px] items-center justify-center mx-auto rounded-full"></div>
-            <button className="py-1 text-2xl px-2 hover:white text-white">Resumé</button>
+            <div className="h-[1px] w-[50px] bg-white flex justify-self-center my-3"></div>
+            <button className="py-1 text-2xl px-2 hover:white text-white">
+              resumé
+            </button>
+            <div className="text-xl flex text-white mt-3">
+              <Link href="">
+                <AiFillLinkedin className="m-2" />
+              </Link>
+              <Link href="">
+                <AiFillGithub className="m-2" />
+              </Link>
+            </div>
+           
           </ul>
+          <div className="fixed bottom-5 left-5 ">
+            <div className="relative flex justify-center mt-3">
+              <SmallCirlces />
+              <WiMoonAltThirdQuarter className="text-white text-xl" />
+            </div>
+          </div>
         </div>
       </div>
     </nav>
