@@ -5,8 +5,19 @@ import About from "../components/About";
 import Work from "../components/Work";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import SocialIcons from "../components/SocialIcons";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  // const [cursorX, setCursorX] = useState();
+  // const [cursorY, setCursorY] = useState();
+
+  // useEffect(() => {
+  //   window.addEventListener("mousemove", (e: any) => {
+  //     setCursorX(e.pageX);
+  //     setCursorY(e.pageY);
+  //   });
+  // }, [cursorX, cursorY]);
   return (
     <>
       <Head>
@@ -36,6 +47,14 @@ export default function Home() {
       <section id="footer" className="">
         <Footer />
       </section>
+
+      {/* <div
+        className="cursor"
+        style={{
+          left: cursorX + "px",
+          top: cursorY + "px",
+        }}
+      ></div> */}
     </>
   );
 }

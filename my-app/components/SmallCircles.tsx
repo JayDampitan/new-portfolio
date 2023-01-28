@@ -15,13 +15,13 @@ const SmallCirlces = (props: Props) => {
       transition={{
         duration: 6,
       }}
-      className="absolute flex justify-center items-center"
+      className="absolute flex justify-center items-center top-[50%] left-[50%]"
     >
-      <div className="absolute border border-[#333333] rounded-full h-[20px] w-[20px] xl:h-[30px] xl:w-[30px]   animate-ping" />
-      <div className="absolute border border-[#333333] rounded-full h-[30px] w-[30px] xl:h-[40px] xl:w-[40px]    animate-ping" />
-      <div className="absolute border border-[#333333] rounded-full h-[40px] w-[40px] xl:h-[60px] xl:w-[60px]    animate-ping" />
-      <div className="absolute border border-[#c8aa6a] rounded-full opacity-20  h-[60px] w-[60px] xl:h-[750px] xl:w-[100px]   animate-pulse" />
-      <div className="absolute border border-[#333333] rounded-full h-[700px] w-[700px]   animate-ping" />
+      <div className="absolute border border-[#333333] rounded-full h-[10px] w-[10px] xl:h-[10px] xl:w-[10px]   animate-ping" />
+      <div className="absolute border border-[#333333] rounded-full h-[20px] w-[20px] xl:h-[20px] xl:w-[20px]    animate-ping" />
+      <div className="absolute border border-[#333333] rounded-full h-[30px] w-[30px] xl:h-[30px] xl:w-[30px]    animate-ping" />
+      <div className="absolute border border-[#c8aa6a] rounded-full opacity-20  h-[40px] w-[40px] xl:h-[40px] xl:w-[40px]   animate-pulse" />
+      <div className="absolute border border-[#333333] rounded-full h-[40px] w-[40px]   animate-ping" />
     </motion.div>
   );
 };
