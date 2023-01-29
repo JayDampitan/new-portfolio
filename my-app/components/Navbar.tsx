@@ -28,7 +28,7 @@ const Navbar = (props: Props) => {
         <ul className="hidden sm:flex items-center justify-center">
           {NAV__LINKS.map((item) => (
             <li onClick={handleNav} className="p-4">
-              <Link className="text-white text-xl" href={item.path}>
+              <Link className="text-white text-xl xl:text-2xl" href={item.path}>
                 {item.display}
               </Link>
             </li>
@@ -37,13 +37,13 @@ const Navbar = (props: Props) => {
             href="/"
             className=" border-l-[1px] border-white px-4 hover:text-light-brown"
           >
-            <div className="text-white text-xl hover:white px-2 hover:text-light-brown duration-300">
+            <div className="text-white text-xl xl:text-2xl hover:white px-2 hover:text-light-brown duration-300">
               resumé
             </div>
           </Link>
           <div className="relative">
             <SmallCirlces />
-            <WiMoonAltThirdQuarter className="text-white" />
+            <WiMoonAltThirdQuarter className="text-white xl:text-2xl" />
           </div>
         </ul>
 
@@ -87,7 +87,7 @@ const Navbar = (props: Props) => {
               </Link>
             </div>
           </ul>
-          <div className="fixed bottom-8 left-5 ">
+          <div className="fixed top-3 left-[50%] ">
             <div className="relative flex justify-center mt-3">
               <SmallCirlces />
               <WiMoonAltThirdQuarter className="text-white text-xl" />

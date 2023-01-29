@@ -34,7 +34,7 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id="about" className="">
+      <section id="about" className="relative">
         <About />
       </section>
 
