@@ -28,7 +28,7 @@ const Navbar = (props: Props) => {
         <ul className="hidden sm:flex items-center justify-center">
           {NAV__LINKS.map((item) => (
             <li onClick={handleNav} className="p-4">
-              <Link className="text-white" href={item.path}>
+              <Link className="text-white text-xl" href={item.path}>
                 {item.display}
               </Link>
             </li>
@@ -37,7 +37,7 @@ const Navbar = (props: Props) => {
             href="/"
             className=" border-l-[1px] border-white px-4 hover:text-light-brown"
           >
-            <div className="text-white text-1xl hover:white px-2 hover:text-light-brown duration-300">
+            <div className="text-white text-xl hover:white px-2 hover:text-light-brown duration-300">
               resumé
             </div>
           </Link>
@@ -56,7 +56,7 @@ const Navbar = (props: Props) => {
 
         {/* mobile menu */}
         <div
-          className={`${
+          className={` ${
             navbarOpen ? "left-0" : "left-full"
           }  sm:hidden absolute top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[#1D1D1D] text-center ease-in-out duration-1000`}
         >
