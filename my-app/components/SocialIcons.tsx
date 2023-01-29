@@ -6,7 +6,7 @@ type Props = {};
 
 const SocialIcons = (props: Props) => {
   return (
-    <div className="hiddem sm:flex-col sm:fixed sm:right-7 sm:top-[43%] text-white text-3xl">
+    <div className="hiddem sm:flex-col sm:fixed sm:right-7 sm:top-[42%] text-white text-3xl">
       <Link
         href="https://www.linkedin.com/in/jay-dampitan1985/"
         target="_blank"

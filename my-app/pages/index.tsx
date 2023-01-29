@@ -7,6 +7,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import SocialIcons from "../components/SocialIcons";
 import { useState, useEffect } from "react";
+import SectionBorder from "../components/SectionBorder";
 
 export default function Home() {
   // const [cursorX, setCursorX] = useState();
@@ -28,7 +29,8 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      <section id="/" className="">
+      <section id="/" className="relative">
+        {/* <SectionBorder /> */}
         <Hero />
       </section>
 
@@ -36,7 +38,7 @@ export default function Home() {
         <About />
       </section>
 
-      <section id="projects" className="">
+      <section id="work" className="">
         <Work />
       </section>
 

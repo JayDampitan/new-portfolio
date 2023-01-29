@@ -19,7 +19,7 @@ const Navbar = (props: Props) => {
 
   return (
     <nav className="fixed left-0 bg-transparent top-0 w-full z-10 ease-in duration-500">
-      <div className="max-w-[1600px] text-gray-400 m-auto flex justify-between items-center px-6 py-3">
+      <div className="max-w-[2000px] text-gray-400 m-auto flex justify-between items-center px-4 py-3">
         <Link href="/">
           <h1 className="text-3xl md:text-4xl font-bold text-white">
             jd<span className="text-light-brown">.</span>
@@ -86,9 +86,8 @@ const Navbar = (props: Props) => {
                 <AiFillGithub className="m-2" />
               </Link>
             </div>
-           
           </ul>
-          <div className="fixed bottom-5 left-5 ">
+          <div className="fixed bottom-8 left-5 ">
             <div className="relative flex justify-center mt-3">
               <SmallCirlces />
               <WiMoonAltThirdQuarter className="text-white text-xl" />
