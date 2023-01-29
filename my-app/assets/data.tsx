@@ -35,41 +35,13 @@ export const CLIENT__DATA = [
   "framer motion",
   "apollo client",
 ];
-// export const CLIENT__DATA = [
-//   {
-//     display: "html5",
-//   },
-//   {
-//     display: "css3",
-//   },
-//   {
-//     display: "javascript",
-//   },
-//   {
-//     display: "typescript",
-//   },
-//   {
-//     display: "redux",
-//   },
-//   {
-//     display: "styled components",
-//   },
-//   {
-//     display: "tailwind",
-//   },
-//   {
-//     display: "framer motion",
-//   },
-//   {
-//     display: "apollo client",
-//   },
-// ];
+
 
 export const SERVER__DATA = [
-  "nodejs",
   "express",
-  "graphql",
-  "mongodb",
-  "django",
   "apollo server",
+  "mongodb",
+  "graphql",
+  "nodejs",
+  "django",
 ];

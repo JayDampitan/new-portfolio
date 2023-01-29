@@ -58,7 +58,9 @@ const Hero = (props: Props) => {
           top: cursorY + "px",
         }}
       ></div>
+      <div className="hidden sm:block">
         <ScrollDown />
+      </div>
     </div>
   );
 };
