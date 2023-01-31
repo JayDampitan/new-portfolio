@@ -49,8 +49,8 @@ export default function Home() {
       <section id="footer" className="">
         <Footer />
       </section>
-
-      {/* <div
+{/* 
+      <div
         className="cursor"
         style={{
           left: cursorX + "px",

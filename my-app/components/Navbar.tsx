@@ -19,7 +19,7 @@ const Navbar = (props: Props) => {
 
   return (
     <nav className="fixed left-0 bg-transparent top-0 w-full z-10 ease-in duration-500">
-      <div className="max-w-[2000px] text-gray-400 m-auto flex justify-between items-center px-4 py-3">
+      <div className="max-w-[1750px] text-gray-400 m-auto flex justify-between items-center px-4 py-3">
         <Link href="/">
           <h1 className="text-3xl md:text-4xl font-bold text-white">
             jd<span className="text-light-brown">.</span>
@@ -28,7 +28,7 @@ const Navbar = (props: Props) => {
         <ul className="hidden sm:flex items-center justify-center">
           {NAV__LINKS.map((item) => (
             <li onClick={handleNav} className="p-4">
-              <Link className="text-white text-xl xl:text-2xl" href={item.path}>
+              <Link className="text-white text-xl xl:text-lg" href={item.path}>
                 {item.display}
               </Link>
             </li>
@@ -37,7 +37,7 @@ const Navbar = (props: Props) => {
             href="/"
             className=" border-l-[1px] border-white px-4 hover:text-light-brown"
           >
-            <div className="text-white text-xl xl:text-2xl hover:white px-2 hover:text-light-brown duration-300">
+            <div className="text-white text-lg xl:text-lg hover:white px-2 hover:text-light-brown duration-300">
               resumé
             </div>
           </Link>
