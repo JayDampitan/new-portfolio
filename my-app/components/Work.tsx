@@ -1,12 +1,15 @@
 import React from "react";
-import Card from "./Card"
+import Card from "./Card";
+import TitleSection from "./TitleSection";
 
 type Props = {};
 
 const Work = (props: Props) => {
   return (
-    <div className="h-screen flex items-center bg-darkGrey">
-      <h2 className="text-red-500 text-7xl">Work page</h2>
+    <div className="h-screen flex justify-center items-center w-full bg-[#595959]">
+      <div className=" max-w-[1500px] mx-auto w-full">
+        <TitleSection textColor="white" title="work." />
+      </div>
     </div>
   );
 };
