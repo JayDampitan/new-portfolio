@@ -53,7 +53,7 @@ const About = (props: Props) => {
         </div>
       </div>
       <div className="hidden sm:block">
-        <ScrollDown />
+   
       </div>
     </div>
   );
