@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import SocialIcons from "../components/SocialIcons";
 import { useState, useEffect } from "react";
 import SectionBorder from "../components/SectionBorder";
+import Loader from "../components/Loader";
 
 export default function Home() {
   // const [cursorX, setCursorX] = useState();
@@ -27,6 +28,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Loader n={100}/>
 
       <Navbar />
       <section id="/" className="relative">

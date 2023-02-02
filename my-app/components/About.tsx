@@ -12,8 +12,8 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div className="h-screen flex px-4 py-4 justify-center items-center w-full bg-darkGrey  ">
-      <div className="max-w-[1500px] w-full">
+    <div className="h-screen flex p-4 justify-center items-center w-full bg-darkGrey  ">
+      <div className="max-w-[1700px] border  w-full">
         <TitleSection textColor='white' title="about." />
         <div className="md:my-10  xl:justify-between flex-col flex xl:flex-row">
           <div className="py-2 xl:w-[50%] flex items-center ">
