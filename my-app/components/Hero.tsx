@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
@@ -11,33 +11,72 @@ import ScrollDown from "./ScrollDown";
 
 type Props = {};
 
-const Hero = (props: Props) => {
-  const svgVariants = {
-    hidden: {
-      rotate: -180,
+const nameVariant = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 2,
+      delay: 4,
     },
-    visible: {
-      rotate: 0,
-      transition: {
-        duration: 1,
-      },
+  },
+};
+const titleVariant = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 2,
+      delay: 4.5,
     },
-  };
+  },
+};
 
-  const pathVariants = {
-    hidden: {
-      opacity: 0,
-      pathLength: 0,
+const whiteVariant = {
+
+  visible: {
+    y: [0,10,10,30,30,10,10,0],
+
+    transition: {
+      duration: 8,
+      delay: 5,
+      repeat: Infinity
     },
-    visible: {
-      opacity: 1,
-      pathLength: 1,
-      transition: {
-        duration: 2,
-        ease: "easeInOut",
-      },
+  },
+};
+const blueVariant = {
+
+  visible: {
+    y: [0,10,10,30,30,10,10,0],
+ 
+    transition: {
+      duration: 8,
+      delay: 5.5,
+      repeat: Infinity
     },
-  };
+  },
+};
+const yellowVariant = {
+  
+  visible: {
+    y: [0,10,10,30,30,10,10,0],
+    transition: {
+      duration: 8,
+      delay: 6,
+      repeat: Infinity
+    },
+  },
+};
+
+const Hero = (props: Props) => {
   // const [cursorX, setCursorX] = useState();
   // const [cursorY, setCursorY] = useState();
 
@@ -48,39 +87,76 @@ const Hero = (props: Props) => {
   //   });
   // }, [cursorX, cursorY]);
 
+  const constrainRef = useRef(null);
+
   return (
-    <div className=" bg-darkGrey w-full h-screen flex">
+    <motion.div
+      ref={constrainRef}
+      className=" bg-darkGrey w-full h-screen flex relative"
+    >
       <div className=" max-w-[1700px] flex h-screen w-full flex-col mx-auto justify-center items-center md:px-20 lg:items-start ">
-        <div className=" md:text-start flex flex-col ">
+        <motion.div
+          variants={nameVariant}
+          initial="hidden"
+          animate="visible"
+          className=" md:text-start flex flex-col "
+        >
           <h1 className="text-3xl sm:text-6xl lg:text-9xl border-b border-white font-bold text-white pb-5 md:pb-10">
             jay dampitan
           </h1>
-        </div>
+        </motion.div>
 
-        <div className=" lg:flex lg:justify-between w-full">
-          <div className=" text-center lg:text-start lg:w-[50%]">
+        <div className=" lg:flex w-full">
+          <motion.div
+            variants={titleVariant}
+            initial="hidden"
+            animate="visible"
+            className=" text-center lg:text-start lg:w-[50%]"
+          >
             <h2 className="text-white text-2xl md:text-5xl lg:text-6xl mt-3">
               software developer
             </h2>
-            <h3 className="text-white text-xl md:text-3xl lg:text-4xl font-light mb-5 md:mb-10 md:mt-4">
+            <h3 className="text-white text-xl md:text-3xl lg:text-4xl font-light mb-5 lg:mb-4 md:mb-10 md:mt-4">
               frontend - backend - ui/ux
             </h3>
-          </div>
-
-          <div
-            className=" transform translate-y-6 
-           w-full flex items-end justify-center lg:justify-end lg:pr-72 lg:w-[50%]"
-          >
-           <motion.div className=" border-gray-900 rounded-full bg-white w-[100px] h-[100px] lg:h-[200px] lg:w-[200px] relative flex items-center justify-center">
-                <motion.div animate={{y: [0, 20 ,10 , 20, 40, 50, 20, 10, 0]}} transition={{duration: 10, repeat: Infinity}} className="absolute w-full h-full bg-white -top-20 -z-10 lg:-top-32 lg:-right-24 blur-2xl lg:blur-3xl rounded-full"></motion.div>
-                <motion.div animate={{y: [0, 20 ,10 , 20, 40, 50, 20, 10, 0]}} transition={{duration: 10, delay: 1, repeat: Infinity}} className="absolute w-full h-full bg-gray-700 -bottom-4 -left-20 -z-10 lg:-bottom-25 lg:-left-32 blur-2xl lg:blur-3xl rounded-full"></motion.div>
-                <motion.div animate={{y: [0, 20 ,10 , 20, 40, 50, 20, 10, 0]}} transition={{duration: 10, delay: 1.5, repeat: Infinity}} className="absolute w-full h-full bg-blue-700 -z-10 -bottom-2 -right-16 lg:-bottom-20 lg:-right-28 blur-2xl lg:blur-3xl rounded-full"></motion.div>
-                <BackgroundCircles/>
-              <motion.h1  className="border p-8 w-[80%] h-[80%] flex items-center justify-center border-darkGrey rounded-full">let's talk</motion.h1>
-           </motion.div>
-          </div>
+            <motion.button className="text-white group text-center border borer-white lg:text-2xl px-3 py-1 lg:px-5 lg:py-2 rounded-full hover:bg-white hover:text-darkGrey transition ease-linear hover:duration-500 hover:transform hover:translate-x-5">
+              <Link href="">
+                let's talk{" "}
+                <span>
+                  <BsArrowUpRight className="ml-3 inline group-hover:rotate-45  duration-500" />
+                </span>
+              </Link>
+            </motion.button>
+          </motion.div>
         </div>
       </div>
+
+      <motion.div
+        variants={whiteVariant}
+      
+        animate="visible"
+        drag
+        dragConstraints={constrainRef}
+        className="absolute w-[8%] h-[10%] bg-white top-60 right-60 blur-3xl rounded-full cursor-pointer"
+      ></motion.div>
+      <motion.div
+        variants={yellowVariant}
+    
+        animate="visible"
+        drag
+        dragConstraints={constrainRef}
+        className="absolute w-[8%] h-[10%] bg-yellow-100 bottom-52 right-[35%] blur-3xl rounded-full cursor-pointer"
+      ></motion.div>
+      <motion.div
+        variants={blueVariant}
+      
+        animate="visible"
+        drag
+        dragConstraints={constrainRef}
+        className="absolute w-[8%] h-[10%] bg-blue-300 top-36 left-[25%]  blur-3xl  rounded-full cursor-pointer"
+      ></motion.div>
+
+      <ScrollDown />
 
       {/* <div
         className="cursor"
@@ -89,10 +165,7 @@ const Hero = (props: Props) => {
           top: cursorY + "px",
         }}
       ></div> */}
-      <div className="hidden sm:block">
-        <ScrollDown />
-      </div>
-    </div>
+    </motion.div>
   );
 };
 

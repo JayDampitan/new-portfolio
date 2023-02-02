@@ -4,8 +4,6 @@ import { useState } from "react";
 import { NAV__LINKS } from "../assets/data";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
-import { WiMoonAltThirdQuarter } from "react-icons/wi";
-import SmallCirlces from "./SmallCircles";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 type Props = {};
@@ -41,10 +39,7 @@ const Navbar = (props: Props) => {
               resumé
             </div>
           </Link>
-          <div className="relative">
-            <SmallCirlces />
-            <WiMoonAltThirdQuarter className="text-white xl:text-2xl" />
-          </div>
+        
         </ul>
 
         <motion.div
@@ -88,10 +83,7 @@ const Navbar = (props: Props) => {
             </div>
           </ul>
           <div className="fixed top-3 left-[50%] ">
-            <div className="relative flex justify-center mt-3">
-              <SmallCirlces />
-              <WiMoonAltThirdQuarter className="text-white text-xl" />
-            </div>
+           
           </div>
         </div>
       </div>

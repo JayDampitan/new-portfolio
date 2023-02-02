@@ -45,4 +45,9 @@
     mix-blend-mode: difference;
     z-index: 20;
   }
+
+  .scroll {
+   writing-mode: vertical-rl;
+   text-orientation: sideways;
+  }
 }
