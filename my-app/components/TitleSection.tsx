@@ -2,14 +2,19 @@ import React from "react";
 
 type Props = {
   title: string;
-  textColor: string
+  textColor: string;
 };
 
 const TitleSection = ({ title, textColor }: Props) => {
   return (
-    <div className="w-full">
-      <h1 className= {`text-${textColor} text-2xl border-b-[1px] border-${textColor} py-2 md:text-5xl xl:pb-6`}>{title}</h1>
-    </div>
+    <>
+      <div className=" text-white lg:text-2xl flex items-center justify-center w-full pr-10">
+        <div className=" flex items-center gap-16">
+          <h1>{title}</h1>
+          <div className="w-[1px] h-[100px] rotate-90 bg-white"></div>
+        </div>
+      </div>
+    </>
   );
 };
 

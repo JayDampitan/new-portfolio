@@ -47,18 +47,7 @@ export default function Home() {
       <section id="contact" className="">
         <Contact />
       </section>
-
-      <section id="footer" className="">
-        <Footer />
-      </section>
-{/* 
-      <div
-        className="cursor"
-        style={{
-          left: cursorX + "px",
-          top: cursorY + "px",
-        }}
-      ></div> */}
+   
     </>
   );
 }

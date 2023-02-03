@@ -8,6 +8,19 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 type Props = {};
 
+const containerVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 2,
+      delay: 5,
+    },
+  },
+};
+
 const Navbar = (props: Props) => {
   const [navbarOpen, setNavbarOpen] = useState(true);
 
@@ -16,14 +29,19 @@ const Navbar = (props: Props) => {
   };
 
   return (
-    <nav className="fixed left-0 bg-transparent top-0 w-full z-10 ease-in duration-500">
+    <motion.nav
+      variants={containerVariant}
+      initial="hidden"
+      animate="visible"
+      className="fixed left-0 bg-transparent top-0 w-full z-10 ease-in duration-500"
+    >
       <div className="max-w-[1750px] text-gray-400 m-auto flex justify-between items-center px-4 py-3">
         <Link href="/">
           <h1 className="text-3xl md:text-4xl font-bold text-white">
             jd<span className="text-light-brown">.</span>
           </h1>
         </Link>
-        <ul className="hidden sm:flex items-center justify-center">
+        <ul className="hidden sm:flex items-center justify-center ">
           {NAV__LINKS.map((item) => (
             <li onClick={handleNav} className="p-4">
               <Link className="text-white text-xl xl:text-lg" href={item.path}>
@@ -31,6 +49,7 @@ const Navbar = (props: Props) => {
               </Link>
             </li>
           ))}
+          <div></div>
           <Link
             href="/"
             className=" border-l-[1px] border-white px-4 hover:text-light-brown"
@@ -39,7 +58,17 @@ const Navbar = (props: Props) => {
               resumé
             </div>
           </Link>
-        
+          <div className="text-xl flex text-white">
+            <Link
+              href="https://www.linkedin.com/in/jay-dampitan1985/"
+              target="_blank"
+            >
+              <AiFillLinkedin className="m-2" />
+            </Link>
+            <Link href="https://github.com/JayDampitan" target="_blank">
+              <AiFillGithub className="m-2" />
+            </Link>
+          </div>
         </ul>
 
         <motion.div
@@ -82,12 +111,10 @@ const Navbar = (props: Props) => {
               </Link>
             </div>
           </ul>
-          <div className="fixed top-3 left-[50%] ">
-           
-          </div>
+          <div className="fixed top-3 left-[50%] "></div>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
