@@ -41,38 +41,45 @@ const titleVariant = {
 };
 
 const whiteVariant = {
-
   visible: {
-    y: [0,10,10,30,30,10,10,0],
-
+    y: [0, 10, 10, 30, 30, 10, 10, 0],
+    scale: [1, 1.2, 1, 1.2, 1, 1.2, 1],
     transition: {
       duration: 8,
       delay: 5,
-      repeat: Infinity
+      repeat: Infinity,
     },
+  },
+  hover: {
+    scale: 1.2,
   },
 };
 const blueVariant = {
-
   visible: {
-    y: [0,10,10,30,30,10,10,0],
- 
+    y: [0, 10, 10, 30, 30, 10, 10, 0],
+    scale: [1, 1.2, 1, 1.2, 1, 1.2, 1],
     transition: {
       duration: 8,
       delay: 5.5,
-      repeat: Infinity
+      repeat: Infinity,
     },
+  },
+  hover: {
+    scale: 1.2,
   },
 };
 const yellowVariant = {
-  
   visible: {
-    y: [0,10,10,30,30,10,10,0],
+    y: [0, 10, 10, 30, 30, 10, 10, 0],
+    scale: [1, 1.1, 1, 1.1, 1, 1.1, 1],
     transition: {
       duration: 8,
       delay: 6,
-      repeat: Infinity
+      repeat: Infinity,
     },
+  },
+  hover: {
+    scale: 1.2,
   },
 };
 
@@ -119,8 +126,8 @@ const Hero = (props: Props) => {
             <h3 className="text-white text-xl md:text-3xl lg:text-4xl font-light mb-5 lg:mb-4 md:mb-10 md:mt-4">
               frontend - backend - ui/ux
             </h3>
-            <motion.button className="text-white group text-center border borer-white lg:text-2xl px-3 py-1 lg:px-5 lg:py-2 rounded-full hover:bg-white hover:text-darkGrey transition ease-linear hover:duration-500 hover:transform hover:translate-x-5">
-              <Link href="">
+            <motion.button className="text-white group text-center border borer-white lg:text-2xl px-3 py-1 lg:px-5 lg:py-2 rounded-full hover:bg-white hover:text-darkGrey transition ease-linear hover:duration-300 hover:transform hover:translate-x-5">
+              <Link href="#contact">
                 let's talk{" "}
                 <span>
                   <BsArrowUpRight className="ml-3 inline group-hover:rotate-45  duration-500" />
@@ -133,15 +140,15 @@ const Hero = (props: Props) => {
 
       <motion.div
         variants={whiteVariant}
-      
+        whileHover="hover"
         animate="visible"
         drag
         dragConstraints={constrainRef}
-        className="absolute w-[8%] h-[10%] bg-white top-60 right-60 blur-3xl rounded-full cursor-pointer"
+        className="absolute w-[8%] h-[10%] bg-white top-60 right-11 lg:right-96 blur-3xl rounded-full cursor-pointer"
       ></motion.div>
       <motion.div
         variants={yellowVariant}
-    
+        whileHover="hover"
         animate="visible"
         drag
         dragConstraints={constrainRef}
@@ -149,7 +156,7 @@ const Hero = (props: Props) => {
       ></motion.div>
       <motion.div
         variants={blueVariant}
-      
+        whileHover="hover"
         animate="visible"
         drag
         dragConstraints={constrainRef}
