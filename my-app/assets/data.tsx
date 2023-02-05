@@ -24,24 +24,22 @@ facere? Dolorem, adipisci ipsam alias magnam optio incidunt iste
 sit dignissimos aliquam numquam sequi eligendi dolorum veniam
 tenetur voluptas laboriosam illo necessitatibus porro ab eos?`]
 
-export const CLIENT__DATA = [
-  "html5",
-  "css3",
+export const STACKS__DATA = [
   "javascript",
   "typescript",
+  "react",
   "redux",
-  "styled components",
   "tailwind",
   "framer motion",
-  "apollo client",
+  "apollo client/server",
+  "graphql"
 ];
 
+export const SERVICES__DATA = [
+  "web development",
+  "ui/ux",
+  "app development"
+]
 
-export const SERVER__DATA = [
-  "express",
-  "apollo server",
-  "mongodb",
-  "graphql",
-  "nodejs",
-  "django",
-];
+
+
