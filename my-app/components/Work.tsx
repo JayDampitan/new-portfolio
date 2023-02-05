@@ -8,7 +8,7 @@ const Work = (props: Props) => {
   return (
     <div className="h-screen flex justify-center items-center w-full bg-darkGrey">
       <div className=" max-w-[1500px] mx-auto w-full">
-        <TitleSection textColor="white" title="work." />
+        <TitleSection textColor="white" title="some chosen work." />
       </div>
     </div>
   );
