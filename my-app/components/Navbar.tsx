@@ -42,8 +42,8 @@ const Navbar = (props: Props) => {
           </h1>
         </Link>
         <ul className="hidden sm:flex items-center justify-center ">
-          {NAV__LINKS.map((item) => (
-            <li onClick={handleNav} className="p-4">
+          {NAV__LINKS.map((item, index) => (
+            <li key={index} onClick={handleNav} className="p-4">
               <Link className="text-white text-xl xl:text-lg" href={item.path}>
                 {item.display}
               </Link>
@@ -78,7 +78,7 @@ const Navbar = (props: Props) => {
           {navbarOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
         </motion.div>
 
-        {/* mobile menu */}
+        {/*--------------- mobile menu --------------*/}
         <div
           className={` ${
             navbarOpen ? "left-0" : "left-full"

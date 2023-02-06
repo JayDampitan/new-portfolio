@@ -1,12 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
-import BackgroundCircles from "./BackgroundCircles";
-import Image from "next/image";
-import self from "../assets/portfolio.jpg";
 import { motion } from "framer-motion";
-import SmallCircles from "../components/SmallCircles";
 import { BsArrowUpRight } from "react-icons/bs";
-import SectionBorder from "./SectionBorder";
 import ScrollDown from "./ScrollDown";
 
 type Props = {};
@@ -84,16 +79,6 @@ const yellowVariant = {
 };
 
 const Hero = (props: Props) => {
-  // const [cursorX, setCursorX] = useState();
-  // const [cursorY, setCursorY] = useState();
-
-  // useEffect(() => {
-  //   window.addEventListener("mousemove", (e: any) => {
-  //     setCursorX(e.pageX);
-  //     setCursorY(e.pageY);
-  //   });
-  // }, [cursorX, cursorY]);
-
   const constrainRef = useRef(null);
 
   return (
@@ -126,11 +111,11 @@ const Hero = (props: Props) => {
             <h3 className="text-white text-xl md:text-3xl lg:text-4xl font-light mb-5 lg:mb-4 md:mb-10 md:mt-4">
               frontend - backend - ui/ux
             </h3>
-            <motion.button className="text-white group text-center border borer-white lg:text-2xl px-3 py-1 lg:px-5 lg:py-2 rounded-full hover:bg-white hover:text-darkGrey transition ease-linear hover:duration-300 hover:transform hover:translate-x-5">
+            <motion.button className="text-white group text-center border border-white lg:text-2xl px-3 py-1 lg:px-5 lg:py-2 rounded-full hover:bg-white hover:text-darkGrey transition ease-linear hover:duration-300 hover:transform hover:translate-x-5">
               <Link href="#contact">
                 let's talk{" "}
                 <span>
-                  <BsArrowUpRight className="ml-3 inline group-hover:rotate-45  duration-500" />
+                  <BsArrowUpRight className="ml-1 inline group-hover:rotate-45  duration-500" />
                 </span>
               </Link>
             </motion.button>
@@ -138,6 +123,7 @@ const Hero = (props: Props) => {
         </div>
       </div>
 
+    {/* ----------background blurs-------------- */}
       <motion.div
         variants={whiteVariant}
         whileHover="hover"
@@ -164,14 +150,6 @@ const Hero = (props: Props) => {
       ></motion.div>
 
       <ScrollDown />
-
-      {/* <div
-        className="cursor"
-        style={{
-          left: cursorX + "px",
-          top: cursorY + "px",
-        }}
-      ></div> */}
     </motion.div>
   );
 };

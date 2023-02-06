@@ -9,7 +9,7 @@ const SmallCirlces = (props: Props) => {
     <motion.div
       animate={{
         scale: [0.6, 1, 1, 1, 0.8, 0.8],
-        opacity: [0.1, 0.2, 0.4, 0.6, 0.6, 0.5, 0.2],
+        opacity: [0.2, 0.2, 0.4, 0.8, 0.8, 0.5, 0.2],
         borderRadius: ["20%", "25%", "50%", "50%", "25%", "20%"],
       }}
       transition={{

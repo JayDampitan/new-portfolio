@@ -2,10 +2,9 @@ import React from "react";
 
 type Props = {
   title: string;
-  textColor: string;
 };
 
-const TitleSection = ({ title, textColor }: Props) => {
+const TitleSection = ({ title }: Props) => {
   return (
     <>
       <div className=" text-white lg:text-2xl flex items-center justify-center w-full pr-10">

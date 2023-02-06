@@ -17,12 +17,14 @@ export const NAV__LINKS = [
   },
 ];
 
-export const ABOUT__DATA = [`Lorem ipsum dolor sit amet consectetur adipisicing elit.
+export const ABOUT__DATA = [
+  `Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Distinctio temporibus et vel praesentium harum. Eveniet quisquam
 ipsa assumenda omnis inventore, ex aspernatur excepturi? Ab, velit
 facere? Dolorem, adipisci ipsam alias magnam optio incidunt iste
 sit dignissimos aliquam numquam sequi eligendi dolorum veniam
-tenetur voluptas laboriosam illo necessitatibus porro ab eos?`]
+tenetur voluptas laboriosam illo necessitatibus porro ab eos?`,
+];
 
 export const STACKS__DATA = [
   "javascript",
@@ -32,14 +34,8 @@ export const STACKS__DATA = [
   "tailwind",
   "framer motion",
   "apollo client/server",
-  "graphql"
+  "graphql",
 ];
 
-export const SERVICES__DATA = [
-  "web development",
-  "ui/ux",
-  "app development"
-]
-
-
+export const SERVICES__DATA = ["web development", "ui/ux", "app development"];
 
