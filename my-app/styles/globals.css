@@ -7,13 +7,12 @@
 @layer components {
   * {
     font-family: "Poppins";
-  
   }
   .email-section {
     writing-mode: vertical-rl;
   }
   /* HOVER EFFECTS */
-  .section-subtitle {
+  /* .section-subtitle {
     color: #ef7a0e !important;
     font-weight: 400;
     margin-left: 40px;
@@ -29,11 +28,11 @@
     height: 2px;
     background: #ef7a0e;
     color: #ef7a0e;
-  }
+  } */
 
-  #main-hero:hover .cursor {
+  /* #about:hover .cursor {
     transform: scale(5);
-  }
+  } */
 
   .cursor {
     width: 90px;

@@ -26,7 +26,7 @@ const ScrollDown = (props: Props) => {
         transition={{ duration: 6, repeat: Infinity }}
         className="absolute bottom-1 right-2 lg:bottom-8 lg:right-11 flex items-center flex-col gap-2"
       >
-        <p className="text-white text-sm  lg:text-xl font-thin scroll">
+        <p className="text-white text-sm  lg:text-lg font-thin scroll">
           scroll
         </p>
         <motion.div className="w-[1px] h-[80px] lg:h-[120px] bg-white"></motion.div>

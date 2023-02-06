@@ -4,22 +4,9 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Work from "../components/Work";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import SocialIcons from "../components/SocialIcons";
-import { useState, useEffect } from "react";
-import SectionBorder from "../components/SectionBorder";
 import Loader from "../components/Loader";
 
 export default function Home() {
-  // const [cursorX, setCursorX] = useState();
-  // const [cursorY, setCursorY] = useState();
-
-  // useEffect(() => {
-  //   window.addEventListener("mousemove", (e: any) => {
-  //     setCursorX(e.pageX);
-  //     setCursorY(e.pageY);
-  //   });
-  // }, [cursorX, cursorY]);
   return (
     <>
       <Head>
@@ -28,11 +15,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Loader n={100}/>
+      <Loader n={100} />
 
       <Navbar />
       <section id="/" className="relative">
-        {/* <SectionBorder /> */}
         <Hero />
       </section>
 
@@ -47,7 +33,6 @@ export default function Home() {
       <section id="contact" className="">
         <Contact />
       </section>
-   
     </>
   );
 }

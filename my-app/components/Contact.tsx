@@ -4,6 +4,7 @@ import ToTop from "./ToTop";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BiPlanet } from "react-icons/bi";
+import SmallCirlces from "./SmallCircles";
 
 type Props = {};
 
@@ -54,7 +55,7 @@ const Contact = (props: Props) => {
   const constraintsRef = useRef(null);
   return (
     <div className="h-screen flex flex-col items-center justify-center bg-darkGrey relative">
-      <TitleSection textColor="darkGrey" title="say hello" />
+      <TitleSection  title="say hello." />
       <div ref={constraintsRef} className="mt-20  relative">
         <motion.div
           animate={{ scale: [1, 1.1, 1, 1.1, 1, 1.1, 1] }}
@@ -91,15 +92,16 @@ const Contact = (props: Props) => {
         ></motion.div>
       </div>
       <ToTop />
-      <div className="absolute left-3 bottom-3 lg:bottom-9 lg:left-9 flex gap-4 hover:scale-110">
-        <div className="w-[20px] h-[20px] lg:h-[30px] lg:w-[30px] flex items-center justify-center border rounded-full cursor-pointer">
+      <div className="absolute left-3 bottom-3 lg:bottom-9 lg:left-9 flex gap-4 hover:scale-110 ">
+        <div className="w-[20px] h-[20px] flex items-center justify-center border rounded-full cursor-pointer">
           <Link
-            className="flex items-center justify-center text-white text-xl"
+            className="flex items-center justify-center text-white text-xl z-20"
             href="https://sharemygame.com/@JayDampitan/jay-s-project-boost-from-unity-3d-course"
             target="_blank"
           >
             <BiPlanet />
           </Link>
+          <SmallCirlces/>
         </div>
       </div>
     </div>
