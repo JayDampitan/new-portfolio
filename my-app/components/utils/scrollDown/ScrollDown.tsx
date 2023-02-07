@@ -1,22 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { containerVariant } from "./scrollDownVariants"
 
 type Props = {};
-
-const containerVariant = {
-  hidden: {
-    opacity: 0,
-    y: -50,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 2,
-      delay: 5,
-    },
-  },
-};
 
 const ScrollDown = (props: Props) => {
   return (

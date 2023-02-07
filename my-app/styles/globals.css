@@ -11,42 +11,12 @@
   .email-section {
     writing-mode: vertical-rl;
   }
-  /* HOVER EFFECTS */
-  /* .section-subtitle {
-    color: #ef7a0e !important;
-    font-weight: 400;
-    margin-left: 40px;
-    position: relative;
-  }
-
-  .section-subtitle::before {
-    content: "";
-    position: absolute;
-    top: 10%;
-    left: -50px;
-    width: 30px;
-    height: 2px;
-    background: #ef7a0e;
-    color: #ef7a0e;
-  } */
-
-  /* #about:hover .cursor {
-    transform: scale(5);
-  } */
-
-  .cursor {
-    width: 90px;
-    height: 90px;
-    background-color: #eaebdb;
-    position: fixed;
-    border-radius: 50%;
-    pointer-events: none;
-    mix-blend-mode: difference;
-    z-index: 20;
-  }
-
   .scroll {
-   writing-mode: vertical-rl;
-   text-orientation: sideways;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
   }
+}
+
+.nav-hover {
+  @apply after:content-[''] after:h-[2px] after:w-0 after:bg-yellow after:absolute after:left-0 after:-bottom-1 transition after:duration-300 hover:after:w-full;
 }

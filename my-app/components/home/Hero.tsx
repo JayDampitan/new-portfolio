@@ -1,88 +1,17 @@
-import React, { useEffect, useState, useRef } from "react";
+import { useRef } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { BsArrowUpRight } from "react-icons/bs";
-import ScrollDown from "./ScrollDown";
+import ScrollDown from "../utils/scrollDown/ScrollDown";
+import {yellowVariant, blueVariant, whiteVariant, nameVariant, titleVariant} from "./heroVariants"
 
 type Props = {};
-
-const nameVariant = {
-  hidden: {
-    x: -100,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      duration: 2,
-      delay: 4,
-    },
-  },
-};
-const titleVariant = {
-  hidden: {
-    x: -100,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      duration: 2,
-      delay: 4.5,
-    },
-  },
-};
-
-const whiteVariant = {
-  visible: {
-    y: [0, 10, 10, 30, 30, 10, 10, 0],
-    scale: [1, 1.2, 1, 1.2, 1, 1.2, 1],
-    transition: {
-      duration: 8,
-      delay: 5,
-      repeat: Infinity,
-    },
-  },
-  hover: {
-    scale: 1.2,
-  },
-};
-const blueVariant = {
-  visible: {
-    y: [0, 10, 10, 30, 30, 10, 10, 0],
-    scale: [1, 1.2, 1, 1.2, 1, 1.2, 1],
-    transition: {
-      duration: 8,
-      delay: 5.5,
-      repeat: Infinity,
-    },
-  },
-  hover: {
-    scale: 1.2,
-  },
-};
-const yellowVariant = {
-  visible: {
-    y: [0, 10, 10, 30, 30, 10, 10, 0],
-    scale: [1, 1.1, 1, 1.1, 1, 1.1, 1],
-    transition: {
-      duration: 8,
-      delay: 6,
-      repeat: Infinity,
-    },
-  },
-  hover: {
-    scale: 1.2,
-  },
-};
 
 const Hero = (props: Props) => {
   const constrainRef = useRef(null);
 
   return (
-    <motion.div
+    <div
       ref={constrainRef}
       className=" bg-darkGrey w-full h-screen flex relative"
     >
@@ -111,7 +40,7 @@ const Hero = (props: Props) => {
             <h3 className="text-white text-xl md:text-3xl lg:text-4xl font-light mb-5 lg:mb-4 md:mb-10 md:mt-4">
               frontend - backend - ui/ux
             </h3>
-            <motion.button className="text-white group text-center border border-white lg:text-2xl px-3 py-1 lg:px-5 lg:py-2 rounded-full hover:bg-white hover:text-darkGrey transition ease-linear hover:duration-300 hover:transform hover:translate-x-5">
+            <motion.button className="text-white group text-center border border-white lg:text-2xl px-3 py-1 lg:px-5 lg:py-2 rounded-full hover:bg-yellow hover:border-none transition ease-linear hover:duration-300 hover:transform hover:translate-x-5">
               <Link href="#contact">
                 let's talk{" "}
                 <span>
@@ -130,7 +59,7 @@ const Hero = (props: Props) => {
         animate="visible"
         drag
         dragConstraints={constrainRef}
-        className="absolute w-[8%] h-[10%] bg-white top-60 right-11 lg:right-96 blur-3xl rounded-full cursor-pointer"
+        className="absolute w-[8%] h-[10%] bg-white top-60 right-11 lg:right-72 blur-3xl rounded-full cursor-pointer"
       ></motion.div>
       <motion.div
         variants={yellowVariant}
@@ -138,7 +67,7 @@ const Hero = (props: Props) => {
         animate="visible"
         drag
         dragConstraints={constrainRef}
-        className="absolute w-[8%] h-[10%] bg-yellow-100 bottom-52 right-[35%] blur-3xl rounded-full cursor-pointer"
+        className="absolute w-[8%] h-[10%] bg-orange-100 bottom-52 right-[35%] blur-3xl rounded-full cursor-pointer"
       ></motion.div>
       <motion.div
         variants={blueVariant}
@@ -150,7 +79,7 @@ const Hero = (props: Props) => {
       ></motion.div>
 
       <ScrollDown />
-    </motion.div>
+    </div>
   );
 };
 

@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Work from "../components/Work";
-import Contact from "../components/Contact";
-import Loader from "../components/Loader";
+import Navbar from "../components/nav/Navbar";
+import Hero from "../components/home/Hero";
+import About from "../components/about/About";
+import Work from "../components/work/Work";
+import Contact from "../components/contact/Contact";
+import Loader from "../components/utils/loader/Loader";
 
 export default function Home() {
   return (

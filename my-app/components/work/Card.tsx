@@ -1,5 +1,5 @@
 import React from "react";
-import { WORK__DATA, OTHER__WORK__DATA } from "../assets/workData";
+import { WORK__DATA } from "../../assets/workData";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
 import { AiFillCheckSquare } from "react-icons/ai";
@@ -17,7 +17,7 @@ const Card = (props: Props) => {
           <h2 className="text-2xl font-bold border-b border-white py-4">
             {item.title}
           </h2>
-          <p className="py-6 text-lg">{item.description}</p>
+          <p className="py-6 text-lg leading-8">{item.description}</p>
           <div className="flex gap-3">
             {item.stacks.map((stack, index) => (
               <div
