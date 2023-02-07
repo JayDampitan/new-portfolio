@@ -40,24 +40,7 @@ const Work = (props: Props) => {
             you have more questions?
           </h1>
           <h2 className="lg:text-2xl my-4">don't hesitate to ask</h2>
-          <svg
-            className="w-8 h-8"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <motion.path
-              variants={pathVariants}
-              initial="hidden"
-              animate="visible"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3"
-            ></motion.path>
-          </svg>
+          
         </div>
       </div>
 

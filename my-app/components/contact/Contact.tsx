@@ -1,19 +1,28 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import TitleSection from "../utils/TitleSection";
 import ToTop from "../utils/ToTop";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BiPlanet } from "react-icons/bi";
 import SmallCirlces from "../utils/SmallCircles";
-import {whiteVariant, orangeVariant, blueVariant } from "./contactVariant"
+import { whiteVariant, orangeVariant, blueVariant } from "./contactVariant";
 
 type Props = {};
 
 const Contact = (props: Props) => {
   const constraintsRef = useRef(null);
+  const [activeTooltip, setActiveTooltip] = useState(false)
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("jaydampitan@gmail.com");
+    setActiveTooltip(true)
+    setTimeout(() => {
+      setActiveTooltip(false)
+    },2000)
+  };
   return (
     <div className="h-screen flex flex-col items-center justify-center bg-darkGrey relative">
-      <TitleSection  title="say hello" />
+      <TitleSection title="say hello" />
       <div ref={constraintsRef} className="mt-20  relative">
         <motion.div
           animate={{ scale: [1, 1.1, 1, 1.1, 1, 1.1, 1] }}
@@ -21,8 +30,14 @@ const Contact = (props: Props) => {
           className="w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] 
           flex items-center justify-center rounded-full bg-yellow "
         >
-          <h2 className="text-xl lg:text-4xl text-gray-500 
-          hover:text-white hover:scale-105 cursor-pointer transition ease-in duration-400">
+          <h2
+            onClick={handleCopy}
+            className={`text-xl lg:text-4xl text-gray-500 
+          hover:text-white hover:scale-105 relative cursor-pointer transition ease-in duration-400
+            after:content-['copied'] after:absolute after:text-[12px]
+             after:text-purple-500 after:-top-9 after:right-28 after:bg-darkGrey after:px-1 after:rounded ${activeTooltip ? "after:opacity-1": "after:opacity-0"}
+          `}
+          >
             jaydampitan@gmail.com
           </h2>
         </motion.div>
@@ -60,8 +75,10 @@ const Contact = (props: Props) => {
 
       {/* -------------planet feature------------ */}
       <div className="absolute left-3 bottom-3 lg:bottom-9 lg:left-9 flex gap-4 hover:scale-110 ">
-        <div className="w-[20px] h-[20px] flex items-center justify-center 
-        border rounded-full cursor-pointer">
+        <div
+          className="w-[20px] h-[20px] flex items-center justify-center 
+        border rounded-full cursor-pointer"
+        >
           <Link
             className="flex items-center justify-center text-white text-xl z-20"
             href="https://sharemygame.com/@JayDampitan/jay-s-project-boost-from-unity-3d-course"
@@ -69,7 +86,7 @@ const Contact = (props: Props) => {
           >
             <BiPlanet />
           </Link>
-          <SmallCirlces/>
+          <SmallCirlces />
         </div>
       </div>
       {/* -----------end of planet feature------------ */}
