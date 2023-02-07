@@ -4,15 +4,15 @@ export const NAV__LINKS = [
     display: "home",
   },
   {
-    path: "#about",
+    path: "about",
     display: "about",
   },
   {
-    path: "#work",
+    path: "work",
     display: "work",
   },
   {
-    path: "#contact",
+    path: "contact",
     display: "contact",
   },
 ];
