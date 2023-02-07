@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll/modules"
+import { Link } from "react-scroll"
 import { useState } from "react";
 import { NAV__LINKS } from "../../assets/data";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -22,7 +22,7 @@ const Navbar = (props: Props) => {
       variants={containerVariant}
       initial="hidden"
       animate="visible"
-      className="fixed left-0 bg-transparent top-0 w-full z-10 ease-in duration-500"
+      className="fixed left-0 bg-transparent top-0 w-full z-50 ease-in duration-500"
     >
       <div className="max-w-[1750px] text-gray-400 m-auto flex justify-between items-center px-4 py-3">
         <Link to="/" spy={true} smooth={true} offset={0} duration={500}>
@@ -42,29 +42,30 @@ const Navbar = (props: Props) => {
             </li>
           ))}
           <div></div>
-          <Link
-            href="/"
-            className=" border-l-[1px] border-white px-4 hover:text-light-brown"
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/jay-dampitan1985/"
+            className=" border-l-[1px] border-white px-4 hover:text-light-brown z-40"
           >
             <div className="text-white text-lg xl:text-lg relative nav-hover">
               resumé
             </div>
-          </Link>
+          </a>
           <div className="text-xl flex text-white ">
-            <Link
+            <a
               className="hover:scale-125"
               href="https://www.linkedin.com/in/jay-dampitan1985/"
               target="_blank"
             >
               <AiFillLinkedin className="m-2" />
-            </Link>
-            <Link
+            </a>
+            <a
               className="hover:scale-125"
               href="https://github.com/JayDampitan"
               target="_blank"
             >
               <AiFillGithub className="m-2" />
-            </Link>
+            </a>
           </div>
         </ul>
 
