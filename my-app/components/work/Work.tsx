@@ -15,7 +15,7 @@ const Work = (props: Props) => {
       ref={constrainRef}
       className=" h-auto flex justify-center pt-16 items-start w-full bg-darkGrey relative"
     >
-      <div className=" max-w-[1750px] mx-auto w-full flex flex-col px-4 pt-20">
+      <div className=" max-w-[1750px] mx-auto w-full flex flex-col px-6 lg:pt-20">
         <TitleSection title="some chosen work" />
         <div>
           <div className="flex flex-col lg:flex-row gap-3 mt-11  items-center justify-center">

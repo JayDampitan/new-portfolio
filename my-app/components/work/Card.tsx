@@ -12,15 +12,15 @@ const Card = (props: Props) => {
       {WORK__DATA.map((item, index) => (
         <div
           key={index}
-          className={` ${item.background} text-white rounded-lg  w-full lg:w-1/3 py-4 lg:py-11 px-10 
+          className={` ${item.background} text-white rounded-lg  w-full lg:w-1/3 py-4 lg:py-8 px-10 
           lg:px-16 lg:pr-20 flex items-start justify-center flex-col 
           opacity-70 hover:opacity-100 duration-200 hover:-translate-y-1 cursor-pointer`}
         >
           <h2 className="text-2xl font-bold border-b border-white py-4">
             {item.title}
           </h2>
-          <p className="py-6 text-lg leading-8">{item.description}</p>
-          <div className="flex gap-3">
+          <p className="py-3 lg:py-6 lg:text-lg lg:leading-8">{item.description}</p>
+          <div className="flex flex-wrap gap-3">
             {item.stacks.map((stack, index) => (
               <div
                 key={index}

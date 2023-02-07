@@ -1,17 +1,17 @@
 import React from "react";
-import { Link } from "react-scroll"
+import { Link } from "react-scroll";
 import { useState } from "react";
 import { NAV__LINKS } from "../../assets/data";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { containerVariant } from "./navVariants"
+import { containerVariant } from "./navVariants";
 
 type Props = {};
 
 const Navbar = (props: Props) => {
   const [navbarOpen, setNavbarOpen] = useState(true);
-  const [active, setActive] = useState(null)
+  const [active, setActive] = useState(null);
 
   const handleNav = () => {
     setNavbarOpen(!navbarOpen);
@@ -31,11 +31,19 @@ const Navbar = (props: Props) => {
           </h1>
         </Link>
         <ul className="hidden sm:flex items-center justify-center gap-4">
-          {NAV__LINKS.map((item, index) =>  (
-            <li key={index}  className={`relative  nav-hover ${active === item && 'active'}`} onClick={() => setActive(item)}>
+          {NAV__LINKS.map((item, index) => (
+            <li
+              key={index}
+              className={`relative  nav-hover ${active === item && "active"}`}
+              onClick={() => setActive(item)}
+            >
               <Link
                 className="flex text-white text-xl xl:text-lg cursor-pointer"
-                to={`${item.path}`} spy={true} smooth={true} offset={0} duration={500}
+                to={`${item.path}`}
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
               >
                 {item.display}
               </Link>
@@ -44,7 +52,7 @@ const Navbar = (props: Props) => {
           <div></div>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/jay-dampitan1985/"
+            href="https://drive.google.com/file/d/1OptG0c1mYhtMQv0F9oJDsuirrOIqRgml/view?usp=sharing"
             className=" border-l-[1px] border-white px-4 hover:text-light-brown z-40"
           >
             <div className="text-white text-lg xl:text-lg relative nav-hover">
@@ -80,7 +88,8 @@ const Navbar = (props: Props) => {
         <div
           className={` ${
             navbarOpen ? "left-0" : "left-full"
-          }  sm:hidden absolute top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[#1D1D1D] text-center ease-in-out duration-500`}
+          }  sm:hidden absolute top-0 right-0 bottom-0 flex 
+          justify-center items-center w-full h-screen bg-[#1D1D1D] text-center ease-in-out duration-300`}
         >
           <ul className="flex-col flex justify-center items-center">
             {NAV__LINKS.map((item) => (
@@ -90,16 +99,24 @@ const Navbar = (props: Props) => {
               >
                 <Link
                   onClick={() => setNavbarOpen(!navbarOpen)}
-                  to={`${item.path}`} spy={true} smooth={true} offset={0} duration={500}
+                  to={`${item.path}`}
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
                 >
                   {item.display}
                 </Link>
               </li>
             ))}
             <div className="h-[1px] w-[50px] bg-white flex justify-self-center my-3"></div>
-            <button className="py-1 text-2xl px-2 hover:white text-white">
+            <a
+              href="https://drive.google.com/file/d/1OptG0c1mYhtMQv0F9oJDsuirrOIqRgml/view?usp=sharing"
+              target="_blank"
+              className="py-1 text-2xl px-2 hover:white text-white"
+            >
               resumé
-            </button>
+            </a>
             <div className="text-xl flex text-white mt-3">
               <a href="https://www.linkedin.com/in/jay-dampitan1985/">
                 <AiFillLinkedin className="m-2" />
