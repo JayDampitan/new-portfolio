@@ -22,5 +22,5 @@
 }
 
 .active {
-  @apply text-yellow;
+  @apply text-yellow ;
 }
