@@ -13,11 +13,11 @@ const OtherWorks = (props: Props) => {
           key={index}
           className={`${item.background}  p-[1px] text-white rounded-lg w-full lg:w-1/3 flex items-center justify-center flex-col opacity-70 hover:opacity-100 duration-200 hover:-translate-y-1`}
         >
-          <div className="bg-darkGrey py-4 lg:py-5 px-10 lg:px-8 lg:pr-10 rounded-lg">
+          <div className="bg-darkGrey py-2 lg:py-5 px-10 lg:px-8 lg:pr-10 rounded-lg">
             <h2 className="text-xl font-bold border-b border-white py-4">
               {item.title}
             </h2>
-            <p className="py-6 leading-6">{item.description}</p>
+            <p className=" py-3 lg:py-6 lg:leading-6">{item.description}</p>
             <div className="flex flex-wrap gap-2">
               {item.stacks.map((stack, index) => (
                 <div
