@@ -37,5 +37,18 @@ export const STACKS__DATA = [
   "graphql",
 ];
 
-export const SERVICES__DATA = ["web development", "ui/ux", "app development"];
+export const SERVICES__DATA = [
+  {
+    skill: "web development",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, minima."
+  },
+  {
+    skill: "ui/ux",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, minima."
+  },
+  {
+    skill: "app development",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, minima."
+  }
+];
 

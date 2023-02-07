@@ -8,7 +8,6 @@ type Props = {
 };
 
 const Number = ({ n }: Props) => {
-  const [loading, setLoading] = useState(true);
 
   const { number } = useSpring({
     from: { number: 0 },

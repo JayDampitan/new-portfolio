@@ -1,25 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { useState } from "react";
-import { NAV__LINKS } from "../assets/data";
+import { NAV__LINKS } from "../../assets/data";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { containerVariant } from "./navVariants"
 
 type Props = {};
-
-const containerVariant = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 2,
-      delay: 5,
-    },
-  },
-};
 
 const Navbar = (props: Props) => {
   const [navbarOpen, setNavbarOpen] = useState(true);
@@ -38,13 +26,16 @@ const Navbar = (props: Props) => {
       <div className="max-w-[1750px] text-gray-400 m-auto flex justify-between items-center px-4 py-3">
         <Link href="/">
           <h1 className="text-3xl md:text-4xl font-bold text-white">
-            jd<span className="text-light-brown">.</span>
+            jd<span className="text-yellow">.</span>
           </h1>
         </Link>
-        <ul className="hidden sm:flex items-center justify-center ">
+        <ul className="hidden sm:flex items-center justify-center gap-4">
           {NAV__LINKS.map((item, index) => (
-            <li key={index} onClick={handleNav} className="p-4">
-              <Link className="text-white text-xl xl:text-lg" href={item.path}>
+            <li key={index} onClick={handleNav} className="relative nav-hover">
+              <Link
+                className="flex text-white text-xl xl:text-lg "
+                href={item.path}
+              >
                 {item.display}
               </Link>
             </li>
@@ -54,18 +45,23 @@ const Navbar = (props: Props) => {
             href="/"
             className=" border-l-[1px] border-white px-4 hover:text-light-brown"
           >
-            <div className="text-white text-lg xl:text-lg hover:white px-2 hover:text-light-brown duration-300">
+            <div className="text-white text-lg xl:text-lg relative nav-hover">
               resumé
             </div>
           </Link>
-          <div className="text-xl flex text-white">
+          <div className="text-xl flex text-white ">
             <Link
+              className="hover:scale-125"
               href="https://www.linkedin.com/in/jay-dampitan1985/"
               target="_blank"
             >
               <AiFillLinkedin className="m-2" />
             </Link>
-            <Link href="https://github.com/JayDampitan" target="_blank">
+            <Link
+              className="hover:scale-125"
+              href="https://github.com/JayDampitan"
+              target="_blank"
+            >
               <AiFillGithub className="m-2" />
             </Link>
           </div>
