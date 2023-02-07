@@ -1,9 +1,15 @@
 import { useRef } from "react";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { BsArrowUpRight } from "react-icons/bs";
 import ScrollDown from "../utils/scrollDown/ScrollDown";
-import {yellowVariant, blueVariant, whiteVariant, nameVariant, titleVariant} from "./heroVariants"
+import {
+  yellowVariant,
+  blueVariant,
+  whiteVariant,
+  nameVariant,
+  titleVariant,
+} from "./heroVariants";
 
 type Props = {};
 
@@ -41,7 +47,13 @@ const Hero = (props: Props) => {
               frontend - backend - ui/ux
             </h3>
             <motion.button className="text-white group text-center border border-white lg:text-2xl px-3 py-1 lg:px-5 lg:py-2 rounded-full hover:bg-yellow hover:border-none transition ease-linear hover:duration-300 hover:transform hover:translate-x-5">
-              <Link href="#contact">
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
                 let's talk{" "}
                 <span>
                   <BsArrowUpRight className="ml-1 inline group-hover:rotate-45  duration-500" />
@@ -52,7 +64,7 @@ const Hero = (props: Props) => {
         </div>
       </div>
 
-    {/* ----------background blurs-------------- */}
+      {/* ----------background blurs-------------- */}
       <motion.div
         variants={whiteVariant}
         whileHover="hover"

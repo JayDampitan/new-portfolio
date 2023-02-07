@@ -35,7 +35,7 @@ const About = (props: Props) => {
               <ul key={index}>
                 <li className="text-white flex items-center">
                   {" "}
-                  <span className="inline-block px-1">
+                  <span className="inline-block px-1 text-yellow">
                     <AiFillCheckSquare />
                   </span>
                   {item}
