@@ -39,12 +39,12 @@ const Hero = (props: Props) => {
           </h1>
         </motion.div>
 
-        <div className=" lg:flex w-full">
+        <div className="">
           <motion.div
             variants={titleVariant}
             initial="hidden"
             animate="visible"
-            className=" text-center lg:text-start lg:w-[50%]"
+            className=" text-center lg:text-start"
           >
             <h2 className="text-white text-2xl md:text-5xl lg:text-6xl mt-3">
               software developer
@@ -55,7 +55,7 @@ const Hero = (props: Props) => {
             >
               frontend - backend - ui/ux
             </h3>
-            <motion.button
+            <button
               className="text-white group text-center 
             border border-white lg:text-2xl px-3 py-1 lg:px-6 lg:py-2 
             rounded-full hover:bg-white hover:text-darkGrey hover:border-none 
@@ -73,7 +73,7 @@ const Hero = (props: Props) => {
                   <BsArrowUpRight className="ml-1 inline group-hover:rotate-45  duration-500" />
                 </span>
               </Link>
-            </motion.button>
+            </button>
           </motion.div>
         </div>
       </div>
