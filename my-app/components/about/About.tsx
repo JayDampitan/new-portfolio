@@ -73,20 +73,25 @@ const About = (props: Props) => {
             const Icon = icons[index];
 
             return (
-              <div
-                key={index}
-                className=" text-white rounded-md  p-1 
+              <div key={index} className="relative group">
+                <div className="absolute inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 
+                rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-1000 
+                group-hover:duration-200"></div>
+                <div
+                  
+                  className="relative bg-darkGrey group text-white rounded-md  p-1 
                     lg:px-3 lg:py-3 border border-white text-center flex 
                     flex-col items-center hover:-translate-y-1 duration-200"
-              >
-                <div className=" lg:text-lg font-semibold flex items-center mb-2 gap-2">
-                  <Icon />
-                  <h4>{item.skill}</h4>
-                </div>
+                >
+                  <div className=" lg:text-lg font-semibold flex items-center mb-2 gap-2">
+                    <Icon />
+                    <h4>{item.skill}</h4>
+                  </div>
 
-                <p className="text-[13px] md:text-[17px] lg:text-sm">
-                  {item.description}
-                </p>
+                  <p className="text-[13px] md:text-[17px] lg:text-sm">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             );
           })}

@@ -27,7 +27,7 @@ const Work = (props: Props) => {
             <h3 className="text-2xl py-2 my-9 border-b border-white">
               other note-worhty projects
             </h3>
-            <div className="flex flex-col lg:flex-row mt-11  items-center justify-center">
+            <div className="flex flex-col lg:flex-row mt-11 gap-3">
               <OtherWorks />
             </div>
           </div>
