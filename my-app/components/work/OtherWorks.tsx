@@ -1,5 +1,5 @@
 import { BsArrowUpRight } from "react-icons/bs";
-import { AiFillCheckSquare } from "react-icons/ai";
+import { AiOutlineRight } from "react-icons/ai";
 import { OTHER__WORK__DATA } from "../../assets/workData";
 import Link from "next/link";
 
@@ -9,15 +9,19 @@ const OtherWorks = (props: Props) => {
   return (
     <>
       {OTHER__WORK__DATA.map((item, index) => (
-        <div key={index} className="w-full lg:w-1/3 items-stretch flex relative group">
-          <div className="absolute inset-0.5 bg-gradient-to-r from-orange-600 to-red-600 rounded-lg blur 
-          opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+        <div
+          key={index}
+          className="w-full lg:w-1/3 items-stretch flex relative group"
+        >
           <div
-          
-            className={`bg-darkGrey relative text-white flex flex-col justify-between py-4 lg:py-8 px-7 lg:px-10 border border-white 
-            duration-200 hover:-translate-y-1 cursor-pointer rounded-lg `}
+            className="absolute inset-0.5 bg-gradient-to-r from-[#aa03ac2f] to-[#9305ffeb] 
+          rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
+          ></div>
+          <div
+            className={`bg-darkGrey relative text-white flex flex-col justify-between py-4 px-4 lg:px-10 border border-white 
+            duration-200 hover:-translate-y-1 cursor-default rounded-lg hover:border-purple-400`}
           >
-            <h2 className="text-2xl text-yellow font-bold border-b border-yellow py-4">
+            <h2 className="text-2xl text-white font-bold border-b border-yellow py-2">
               {item.title}
             </h2>
             <p className="py-3  lg:py-6 text-[16px]  lg:leading-6">
@@ -30,7 +34,7 @@ const OtherWorks = (props: Props) => {
                   className="py-1 rounded-md text-sm lg:text-md flex items-center justify-center"
                 >
                   <span>
-                    <AiFillCheckSquare className="mx-1 text-yellow" />
+                    <AiOutlineRight className="mx-1 text-yellow" />
                   </span>
                   <p>{stack}</p>
                 </div>

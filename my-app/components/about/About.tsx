@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import TitleSection from "../utils/TitleSection";
 import { ABOUT__DATA, STACKS__DATA, SERVICES__DATA } from "../../assets/data";
-import { AiFillCheckSquare, AiFillAppstore } from "react-icons/ai";
+import { AiOutlineRight, AiFillAppstore } from "react-icons/ai";
 import { SiMaterialdesignicons } from "react-icons/si";
 import { BsGlobe } from "react-icons/bs";
 import { whiteVariant } from "./aboutVariant";
@@ -54,8 +54,8 @@ const About = (props: Props) => {
                 lg:text-[16px] flex items-center"
                 >
                   {" "}
-                  <span className="inline-block px-1 text-white">
-                    <AiFillCheckSquare />
+                  <span className="inline-block px-1 text-yellow">
+                    <AiOutlineRight className="text-xs" />
                   </span>
                   {item}
                 </li>
@@ -74,16 +74,17 @@ const About = (props: Props) => {
 
             return (
               <div key={index} className="relative group">
-                <div className="absolute inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 
-                rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-1000 
-                group-hover:duration-200"></div>
                 <div
-                  
+                  className="absolute inset-0.5 bg-gradient-to-r from-[#0ddd8643] to-[#2ecbc0]
+                rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-1000 
+                group-hover:duration-200"
+                ></div>
+                <div
                   className="relative bg-darkGrey group text-white rounded-md  p-1 
                     lg:px-3 lg:py-3 border border-white text-center flex 
-                    flex-col items-center hover:-translate-y-1 duration-200"
+                    flex-col items-center hover:border-green-300 hover:-translate-y-1 duration-200"
                 >
-                  <div className=" lg:text-lg font-semibold flex items-center mb-2 gap-2">
+                  <div className="lg:text-lg font-semibold flex items-center mb-2 gap-2">
                     <Icon />
                     <h4>{item.skill}</h4>
                   </div>
