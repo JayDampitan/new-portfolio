@@ -18,17 +18,17 @@ const Work = (props: Props) => {
       <div className=" max-w-[1750px] mx-auto w-full flex flex-col px-6 lg:pt-20">
         <TitleSection title="some chosen work" />
         <div>
-          <div className="flex flex-col lg:flex-row gap-3 mt-11  items-center justify-center">
+          <div className="flex flex-col lg:flex-row mt-11  items-center justify-center">
             <Card />
           </div>
 
           {/* -------start of other projects---------- */}
           <div className="flex flex-col text-white mx-auto max-w-[1200px] items-center justify-center mt-10">
             <h3 className="text-2xl py-2 my-9 border-b border-white">
-              other noteworhty projects
+              other note-worhty projects
             </h3>
-            <div>
-              <OtherWorks/>
+            <div className="flex flex-col lg:flex-row mt-11  items-center justify-center">
+              <OtherWorks />
             </div>
           </div>
           {/* --------end of other projects------------- */}
@@ -40,7 +40,6 @@ const Work = (props: Props) => {
             you have more questions?
           </h1>
           <h2 className="lg:text-2xl my-4">don't hesitate to ask</h2>
-          
         </div>
       </div>
 
