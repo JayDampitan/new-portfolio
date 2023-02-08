@@ -24,7 +24,7 @@ const Navbar = (props: Props) => {
       animate="visible"
       className="fixed left-0 bg-transparent top-0 w-full z-10 ease-in duration-500"
     >
-      <div className="max-w-[1750px] text-gray-400 m-auto flex justify-between items-center px-4 py-3">
+      <div className="max-w-[1750px] text-gray-400 m-auto flex justify-between items-center px-4 lg:px-20 py-6">
         <Link to="/" spy={true} smooth={true} offset={0} duration={500}>
           <h1 className="text-3xl md:text-4xl font-bold text-white cursor-pointer">
             jd<span className="text-yellow">.</span>

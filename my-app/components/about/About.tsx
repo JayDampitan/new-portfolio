@@ -22,29 +22,37 @@ const About = (props: Props) => {
     <div
       ref={constraintRef}
       className=" h-auto w-full bg-darkGrey 
-      flex justify-center relative px-4 pt-2 lg:pt-8" 
+      flex justify-center relative px-4 pt-2 lg:pt-8"
     >
       <div
         className=" h-screen max-w-[1700px] justify-center 
           px-4 w-full flex items-center flex-col border-b-[1px] border-white lg:pb-11"
       >
         <TitleSection title="something about me" />
+
         <div className=" flex flex-col items-center justify-center ">
-          <div className=" xl:w-[50%]  lg:max-w-[1700px]">
+          <div className=" xl:w-[50%]  lg:max-w-[1500px]">
             {ABOUT__DATA.map((item, index) => (
               <p
                 key={index}
-                className=" text-white text-sm px-2 leading-loose xl:leading-10 sm:text-2xl xl:text-xl"
+                className="text-center text-white text-[15px] md:text-[17px] lg:text-lg px-2 lg:leading-loose 
+                           "
               >
                 {item}
               </p>
             ))}
           </div>
           {/* ---------- skills -------------- */}
-          <div className="flex-wrap flex gap-3 lg:gap-6 pt-3 lg:pt-10 max-w-[500px] lg:max-w-[600px] ">
+          <div
+            className="flex-wrap justify-center flex gap-1 lg:gap-3 my-1 pt-3 
+          lg:pt-10 max-w-[500px] lg:max-w-[600px] "
+          >
             {STACKS__DATA.map((item, index) => (
               <ul key={index}>
-                <li className="text-white flex items-center">
+                <li
+                  className="text-white text-[13px] md:text-[17px]  lg:text-lg 
+                lg:text-[16px] flex items-center"
+                >
                   {" "}
                   <span className="inline-block px-1 text-white">
                     <AiFillCheckSquare />
@@ -57,23 +65,28 @@ const About = (props: Props) => {
         </div>
 
         {/* ---------- services offered -------------- */}
-        <div className=" flex flex-col lg:flex-row gap-4 my-4 lg:my-14 w-[80%] md:w-[70%] lg:w-2/3 cursor-default">
+        <div
+          className=" flex flex-col lg:flex-row gap-4 mt-4 md:mt-6 lg:my-14 
+        w-[90%] md:w-[70%] lg:w-2/3 cursor-default"
+        >
           {SERVICES__DATA.map((item, index) => {
             const Icon = icons[index];
 
             return (
               <div
                 key={index}
-                className=" text-sm text-white rounded-md  p-1 
+                className=" text-white rounded-md  p-1 
                     lg:px-3 lg:py-3 border border-white text-center flex 
                     flex-col items-center hover:-translate-y-1 duration-200"
               >
-                <div className="lg:text-lg font-semibold flex items-center gap-2">
+                <div className=" lg:text-lg font-semibold flex items-center mb-2 gap-2">
                   <Icon />
                   <h4>{item.skill}</h4>
                 </div>
 
-                <p className="text-[13px] lg:text-sm">{item.description}</p>
+                <p className="text-[13px] md:text-[17px] lg:text-sm">
+                  {item.description}
+                </p>
               </div>
             );
           })}

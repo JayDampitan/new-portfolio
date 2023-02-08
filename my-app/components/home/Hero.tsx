@@ -23,7 +23,7 @@ const Hero = (props: Props) => {
     >
       <div
         className=" max-w-[1700px] flex h-screen w-full flex-col 
-      mx-auto justify-center items-center md:px-20 lg:items-start "
+      mx-auto justify-center items-center md:px-20 lg:items-start lg:mt-11"
       >
         <motion.div
           variants={nameVariant}
@@ -57,7 +57,7 @@ const Hero = (props: Props) => {
             </h3>
             <motion.button
               className="text-white group text-center 
-            border border-white lg:text-2xl px-3 py-1 lg:px-5 lg:py-2 
+            border border-white lg:text-2xl px-3 py-1 lg:px-6 lg:py-2 
             rounded-full hover:bg-white hover:text-darkGrey hover:border-none 
             transition ease-linear hover:duration-300 hover:transform hover:translate-x-5"
             >
