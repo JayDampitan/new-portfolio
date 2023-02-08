@@ -2,7 +2,7 @@ import React from "react";
 import { WORK__DATA } from "../../assets/workData";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
-import { AiFillCheckSquare } from "react-icons/ai";
+import { AiOutlineRight } from "react-icons/ai";
 
 type Props = {};
 
@@ -29,7 +29,7 @@ const Card = (props: Props) => {
                 className="py-1 rounded-md text-sm lg:text-md flex items-center justify-center"
               >
                 <span>
-                  <AiFillCheckSquare className="mx-1" />
+                  <AiOutlineRight className="mx-1" />
                 </span>
                 {stack}
               </div>
@@ -55,7 +55,7 @@ const Card = (props: Props) => {
               rounded-full text-sm flex items-center hover:bg-white hover:text-darkGrey 
               duration-300 hover:-translate-y-1"
               >
-                <a href={item.github} target="_blank">
+                <a href={item.launch} target="_blank">
                   {" "}
                   launch
                 </a>

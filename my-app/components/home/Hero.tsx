@@ -33,7 +33,7 @@ const Hero = (props: Props) => {
         >
           <h1
             className="text-3xl sm:text-6xl lg:text-9xl border-b
-           border-white font-bold text-white pb-5 md:pb-10"
+           border-yellow font-bold text-white pb-5 md:pb-10"
           >
             jay dampitan
           </h1>
@@ -55,25 +55,29 @@ const Hero = (props: Props) => {
             >
               frontend - backend - ui/ux
             </h3>
-            <button
-              className="text-white group text-center 
+            <div className="relative group w-fit mx-auto lg:mx-0">
+              <div className="absolute inset-0.5 bg-gradient-to-r from-[#ffb7005d] to-[#eb412ad2] 
+              rounded-full blur opacity-0 group-hover:opacity-100"></div>
+              <button
+                className="text-darkGrey relative bg-white group text-center 
             border border-white lg:text-2xl px-3 py-1 lg:px-6 lg:py-2 
-            rounded-full hover:bg-white hover:text-darkGrey hover:border-none 
-            transition ease-linear hover:duration-300 hover:transform hover:translate-x-5"
-            >
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+            rounded-full hover:text-orange-400 hover:bg-darkGrey hover:border-orange-400 
+            transition ease-linear"
               >
-                let's talk{" "}
-                <span>
-                  <BsArrowUpRight className="ml-1 inline group-hover:rotate-45  duration-500" />
-                </span>
-              </Link>
-            </button>
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  let's talk{" "}
+                  <span>
+                    <BsArrowUpRight className="ml-1 inline group-hover:rotate-45  duration-500" />
+                  </span>
+                </Link>
+              </button>
+            </div>
           </motion.div>
         </div>
       </div>
