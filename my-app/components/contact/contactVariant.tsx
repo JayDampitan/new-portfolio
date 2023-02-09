@@ -42,3 +42,17 @@ export const whiteVariant = {
       scale: 1.2,
     },
   };
+
+  export const contactVariant = {
+    hidden: {
+      opacity: 0,
+      scale: .8
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1.5
+      }
+    },
+  };

@@ -57,11 +57,11 @@ const Hero = (props: Props) => {
             </h3>
             <div className="relative group w-fit mx-auto lg:mx-0">
               <div className="absolute inset-0.5 bg-gradient-to-r from-[#ffb7005d] to-[#eb412ad2] 
-              rounded-full blur opacity-0 group-hover:opacity-100"></div>
+              rounded-full blur opacity-0 group-hover:opacity-60"></div>
               <button
                 className="text-darkGrey relative bg-white group text-center 
             border border-white lg:text-2xl px-3 py-1 lg:px-6 lg:py-2 
-            rounded-full hover:text-orange-400 hover:bg-darkGrey hover:border-orange-400 
+            rounded-full hover:text-orange-200 hover:bg-darkGrey hover:border-orange-400 
             transition ease-linear"
               >
                 <Link

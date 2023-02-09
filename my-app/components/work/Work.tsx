@@ -1,7 +1,12 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import TitleSection from "../utils/TitleSection";
-import { yellowVariant, pathVariants } from "./workVariants";
+import TitleSection from "../utils/title/TitleSection";
+import {
+  yellowVariant,
+  endingTitleVariant,
+  endingPhraseVariant,
+  otherTitleVariant,
+} from "./workVariants";
 import Card from "./Card";
 import OtherWorks from "./OtherWorks";
 
@@ -24,9 +29,15 @@ const Work = (props: Props) => {
 
           {/* -------start of other projects---------- */}
           <div className="flex flex-col text-white mx-auto max-w-[1200px] items-center justify-center mt-10">
-            <h3 className="text-2xl py-2 my-9 border-b border-yellow">
+            <motion.h3
+              variants={otherTitleVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="text-2xl py-2 my-9 border-b border-yellow"
+            >
               other note-worhty projects
-            </h3>
+            </motion.h3>
             <div className="flex flex-col lg:flex-row mt-11 gap-3">
               <OtherWorks />
             </div>
@@ -36,10 +47,24 @@ const Work = (props: Props) => {
 
         {/* ---------- work ending title-------------- */}
         <div className="flex items-center justify-center text-white flex-col mt-32 mb-12">
-          <h1 className="text-xl lg:text-5xl font-bold">
+          <motion.h1
+            variants={endingTitleVariant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-xl lg:text-5xl font-bold"
+          >
             you have more questions?
-          </h1>
-          <h2 className="lg:text-2xl my-4">don't hesitate to ask</h2>
+          </motion.h1>
+          <motion.h2
+            variants={endingPhraseVariant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="lg:text-2xl my-4"
+          >
+            don't hesitate to ask
+          </motion.h2>
         </div>
       </div>
 
@@ -50,7 +75,7 @@ const Work = (props: Props) => {
         animate="visible"
         drag
         dragConstraints={constrainRef}
-        className="absolute w-[5%] h-[5%] bg-orange-100 top-32 right-[35%] blur-3xl rounded-full cursor-pointer"
+        className="absolute w-[5%] h-[5%] bg-gradient-to-r  from-[#aa03ac2f] to-[#a335f6] top-32 right-[35%] blur-3xl opacity-60 rounded-full cursor-pointer"
       ></motion.div>
     </div>
   );

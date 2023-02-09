@@ -1,6 +1,8 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { WORK__DATA } from "../../assets/workData";
 import Link from "next/link";
+import { cardHoverVariant } from "./workVariants";
 import { BsArrowUpRight } from "react-icons/bs";
 import { AiOutlineRight } from "react-icons/ai";
 
@@ -8,13 +10,18 @@ type Props = {};
 
 const Card = (props: Props) => {
   return (
-    <div className="flex flex-col lg:flex-row items-stretch gap-2 mt-7">
+    <div className=" flex flex-col lg:flex-row items-stretch gap-2 mt-7">
       {WORK__DATA.map((item, index) => (
-        <div
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 0.7, y: 0 }}
+          variants={cardHoverVariant}
+          whileHover="hover"
+          transition={{ duration: 1, delay: index * 0.3 }}
+          viewport={{ once: true }}
           key={index}
           className={` ${item.background} text-white rounded-lg  w-full lg:w-1/3 py-4 lg:py-8 px-10 
-          lg:px-16 lg:pr-20 flex items-stretch justify-between flex-col 
-          opacity-70 hover:opacity-100 duration-200 hover:-translate-y-1 cursor-pointer`}
+          lg:px-16 lg:pr-20 flex items-stretch justify-between flex-col cursor-pointer`}
         >
           <h2 className="text-2xl font-bold border-b border-white py-4">
             {item.title}
@@ -65,7 +72,7 @@ const Card = (props: Props) => {
               </button>
             ) : null}
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

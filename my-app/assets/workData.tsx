@@ -12,7 +12,7 @@ export const WORK__DATA = [
     title: "project boost (game)",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi esse adipisci dolores, eligendi voluptates voluptatibus nulla cumque sequi dolore!",
-    background: "bg-gradient-to-r from-[#0ddd8643] to-[#2ecbc0]",
+    background: "bg-gradient-to-r from-[#0ddd8645] to-[#0df1e2]",
     stacks: ["unity", "c#"],
     github: "https://github.com/JayDampitan/Project-boost",
     launch:
@@ -22,7 +22,7 @@ export const WORK__DATA = [
     title: "kovee",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi esse adipisci dolores, eligendi voluptates voluptatibus nulla cumque sequi dolore!",
-    background: "bg-gradient-to-r from-[#aa03ac2f] to-[#9305ffeb]",
+    background: "bg-gradient-to-r from-[#aa03ac2f] to-[#a335f6]",
     stacks: ["native", "rtk", "expo"],
     github: "https://github.com/BlackCubes/covidmap-react-native",
   },

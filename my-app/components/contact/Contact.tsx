@@ -1,8 +1,13 @@
 import React, { useState, useRef } from "react";
-import TitleSection from "../utils/TitleSection";
+import TitleSection from "../utils/title/TitleSection";
 import ToTop from "../utils/ToTop";
 import { motion } from "framer-motion";
-import { whiteVariant, orangeVariant, blueVariant } from "./contactVariant";
+import {
+  whiteVariant,
+  orangeVariant,
+  blueVariant,
+  contactVariant,
+} from "./contactVariant";
 
 type Props = {};
 
@@ -20,7 +25,14 @@ const Contact = (props: Props) => {
   return (
     <div className="h-screen flex flex-col items-center justify-center bg-darkGrey relative">
       <TitleSection title="say hello" />
-      <div ref={constraintsRef} className="mt-20  relative">
+      <motion.div
+        variants={contactVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true}}
+        ref={constraintsRef}
+        className="mt-20  relative"
+      >
         <motion.div
           animate={{ scale: [1, 1.1, 1, 1.1, 1, 1.1, 1] }}
           transition={{ duration: 8, repeat: Infinity }}
@@ -33,7 +45,9 @@ const Contact = (props: Props) => {
           hover:text-white hover:scale-105 relative cursor-pointer transition ease-in duration-400
             after:content-['copied'] after:absolute after:text-[12px]
              after:text-purple-500 after:-top-9 after:right-28 after:bg-darkGrey after:px-1 after:rounded ${
-               activeTooltip ? "after:opacity-1" : "after:opacity-0 after:duration-300 after:ease-in-out"
+               activeTooltip
+                 ? "after:opacity-1"
+                 : "after:opacity-0 after:duration-300 after:ease-in-out"
              }
           `}
           >
@@ -69,7 +83,7 @@ const Contact = (props: Props) => {
           className="absolute w-[40%] h-[40%] bg-blue-300 bottom-0 
           left-[30%] blur-3xl  rounded-full cursor-pointer"
         ></motion.div>
-      </div>
+      </motion.div>
       <ToTop />
     </div>
   );
