@@ -32,7 +32,7 @@ const About = (props: Props) => {
     >
       <div
         className=" h-screen max-w-[1700px] justify-center 
-          px-4 w-full flex items-center flex-col border-b-[1px] border-white lg:pb-11"
+          px-4 w-full flex items-center flex-col border-b-[1px] border-yellow lg:pb-11"
       >
         <TitleSection title="something about me" />
 
@@ -98,7 +98,7 @@ const About = (props: Props) => {
                   className="relative group"
                 >
                   <div
-                    className="absolute inset-0.5 bg-gradient-to-r from-[#0ddd8643] to-[#2ecbc0]
+                    className="absolute inset-0.5 bg-gradient-to-r from-[#0ddd8643] to-[#2e91cb]
                 rounded-lg blur opacity-0 group-hover:opacity-50 transition duration-1000 
                 group-hover:duration-200"
                   ></div>

@@ -40,7 +40,7 @@ export const STACKS__DATA = [
 
 export const SERVICES__DATA = [
   {
-    skill: "web development",
+    skill: "web/app development",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, minima.",
   },
   {
@@ -48,7 +48,7 @@ export const SERVICES__DATA = [
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, minima.",
   },
   {
-    skill: "app development",
+    skill: "game development",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, minima.",
   }
 ];
