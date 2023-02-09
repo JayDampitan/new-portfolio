@@ -7,6 +7,7 @@ import {
   orangeVariant,
   blueVariant,
   contactVariant,
+  blVariant,
 } from "./contactVariant";
 
 type Props = {};
@@ -29,7 +30,7 @@ const Contact = (props: Props) => {
         variants={contactVariant}
         initial="hidden"
         whileInView="visible"
-        viewport={{once: true}}
+        viewport={{ once: true }}
         ref={constraintsRef}
         className="mt-20  relative"
       >
@@ -85,6 +86,24 @@ const Contact = (props: Props) => {
         ></motion.div>
       </motion.div>
       <ToTop />
+      {/* --------start of bottom left element--------- */}
+      <motion.div
+        variants={blVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="absolute text-white bottom-4 left-4 text-[10px] md:text-[14px] md:left-10"
+      >
+        <p>designed and built by:</p>
+        <a
+          href="https://github.com/JayDampitan"
+          target="_blank"
+          className="text-yellow"
+        >
+          jay dampitan
+        </a>
+        <p>2023</p>
+      </motion.div>
     </div>
   );
 };
