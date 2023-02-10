@@ -10,7 +10,7 @@ import { containerVariant } from "./navVariants";
 type Props = {};
 
 const Navbar = (props: Props) => {
-  const [navbarOpen, setNavbarOpen] = useState(true);
+  const [navbarOpen, setNavbarOpen] = useState(false);
   const [active, setActive] = useState(null);
 
   const handleNav = () => {
@@ -49,11 +49,10 @@ const Navbar = (props: Props) => {
               </Link>
             </li>
           ))}
-          <div></div>
           <a
             target="_blank"
             href="https://drive.google.com/file/d/1OptG0c1mYhtMQv0F9oJDsuirrOIqRgml/view?usp=sharing"
-            className=" border-l-[1px] border-white px-4 hover:text-light-brown z-40"
+            className=" border-l-[1px] border-yellow px-4 hover:text-light-brown z-40"
           >
             <div className="text-white text-lg xl:text-lg relative nav-hover">
               resumé

@@ -23,10 +23,10 @@ const Card = (props: Props) => {
           className={` ${item.background} text-white rounded-lg  w-full lg:w-1/3 py-4 lg:py-8 px-10 
           lg:px-16 lg:pr-20 flex items-stretch justify-between flex-col cursor-pointer`}
         >
-          <h2 className="text-2xl font-bold border-b border-white py-4">
+          <h2 className="lg:text-2xl font-bold border-b border-white py-4">
             {item.title}
           </h2>
-          <p className="py-3 lg:py-6 text-[16px] lg:pr-10 lg:leading-6">
+          <p className="py-3 lg:py-6 text-sm lg:text-[16px] lg:pr-10 lg:leading-6">
             {item.description}
           </p>
           <div className="flex flex-wrap gap-1">
