@@ -26,10 +26,10 @@ const OtherWorks = (props: Props) => {
             className={`bg-darkGrey relative text-white flex flex-col justify-between py-4 px-4 lg:px-10 border border-white 
             duration-200 hover:-translate-y-1 cursor-pointer rounded-lg hover:border-purple-400`}
           >
-            <h2 className="text-2xl text-white font-bold border-b border-yellow py-2">
+            <h2 className="lg:text-2xl text-white font-bold border-b border-yellow py-2">
               {item.title}
             </h2>
-            <p className="py-3  lg:py-6 text-[16px]  lg:leading-6">
+            <p className="py-3  lg:py-6 text-sm lg:text-[16px]  lg:leading-6">
               {item.description}
             </p>
             <div className="flex flex-wrap">
@@ -39,7 +39,7 @@ const OtherWorks = (props: Props) => {
                   className="py-1 rounded-md text-sm lg:text-md flex items-center justify-center"
                 >
                   <span>
-                    <AiOutlineRight className="mx-1 text-yellow" />
+                    <AiOutlineRight className="mx-1 text-white" />
                   </span>
                   <p>{stack}</p>
                 </div>

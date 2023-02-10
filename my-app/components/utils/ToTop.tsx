@@ -21,7 +21,7 @@ const ToTop = (props: Props) => {
       >
         back to top
       </Link>
-      <motion.div className="w-[1px] h-[80px] lg:h-[150px] bg-white"></motion.div>
+      <motion.div className="w-[1px] h-[80px] lg:h-[150px] bg-yellow"></motion.div>
     </motion.div>
   );
 };

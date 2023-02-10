@@ -34,7 +34,7 @@ const Work = (props: Props) => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="text-2xl py-2 my-9 border-b border-yellow"
+              className="lg:text-2xl py-2 my-9 border-b border-yellow"
             >
               other note-worhty projects
             </motion.h3>

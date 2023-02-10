@@ -91,6 +91,7 @@ const Contact = (props: Props) => {
         variants={blVariant}
         initial="hidden"
         whileInView="visible"
+        whileHover="hover"
         viewport={{ once: true }}
         className="absolute text-white bottom-4 left-4 text-[10px] md:text-[14px] md:left-10"
       >

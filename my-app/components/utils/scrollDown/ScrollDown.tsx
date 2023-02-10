@@ -15,7 +15,7 @@ const ScrollDown = (props: Props) => {
         <p className="text-white text-sm  lg:text-lg font-thin scroll">
           scroll
         </p>
-        <motion.div className="w-[1px] h-[80px] lg:h-[120px] bg-white"></motion.div>
+        <motion.div className="w-[1px] h-[80px] lg:h-[120px] bg-yellow"></motion.div>
       </motion.div>
     </motion.div>
   );

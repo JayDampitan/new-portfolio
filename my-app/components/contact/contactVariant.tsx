@@ -67,7 +67,10 @@ export const whiteVariant = {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 1.5
+        duration: 1
       }
     },
+    hover: {
+      x: 10
+    }
   };
