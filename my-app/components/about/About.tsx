@@ -2,10 +2,11 @@ import { useRef, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Link from "next/link";
 import TitleSection from "../utils/title/TitleSection";
-import { ABOUT__DATA, STACKS__DATA, SERVICES__DATA } from "../../assets/data";
-import { AiOutlineRight, AiFillAppstore } from "react-icons/ai";
+import { STACKS__DATA, SERVICES__DATA } from "../../assets/data";
+import { AiOutlineRight } from "react-icons/ai";
 import { SiMaterialdesignicons } from "react-icons/si";
 import { BsGlobe } from "react-icons/bs";
+import { FaGamepad } from "react-icons/fa"
 import {
   whiteVariant,
   descriptionVariant,
@@ -14,10 +15,9 @@ import {
 
 type Props = {};
 
-const icons = [BsGlobe, SiMaterialdesignicons, AiFillAppstore];
+const icons = [BsGlobe, SiMaterialdesignicons, FaGamepad];
 
 const About = (props: Props) => {
-  const controls = useAnimation();
 
   const constraintRef = useRef(null);
   return (
@@ -40,28 +40,38 @@ const About = (props: Props) => {
             viewport={{ once: true }}
             className=" xl:w-[50%]  lg:max-w-[1500px]"
           >
-            {ABOUT__DATA.map((item, index) => (
-              <p
-                key={index}
-                className="text-center text-white text-sm md:text-[17px] lg:text-lg px-2 lg:leading-loose">
-                {item}
-              </p>
-            ))}
+            <p className="text-center text-white text-sm md:text-[17px] lg:text-lg px-2 lg:leading-loose">
+              Hello, my name is Jay Dampitan, a software developer from
+              California. I started my programming journey over 2 years ago
+              after taking{" "}
+              <span className="text-yellow hover:border-b hover:border-yellow">
+                <a className="" target="_blank" href="https://bitwiseindustries.com/">
+                  Bitwise Industries
+                </a>
+              </span>{" "}
+              boot camp style classes including HTML5, CSS3, Javascript, Python,
+              Django, and React. I eventually got accepted to their nationally
+              recognized apprenticeship program where I was mentored and coded
+              alongside professional engineers, working on real-life projects.
+            </p>
           </motion.div>
           {/* ---------- skills -------------- */}
           <motion.div
-            className="flex-wrap justify-center flex gap-1 lg:gap-3 my-1 pt-3 
-          lg:pt-10 max-w-[500px] lg:max-w-[600px] "
+            className="flex-wrap text-white justify-center items-center flex flex-col my-1 pt-3 
+          lg:pt-4 max-w-[500px] lg:max-w-[600px]"
           >
-            {STACKS__DATA.map((item, index) => (
-              <ul key={index}>
+            <p className="border-b border-yellow pb-1 text-sm md:text-[17px] lg:text-lg text-center">
+              Here are a few technologies I've been working with lately :
+            </p>
+            <ul className="flex items-center flex-wrap gap-4 justify-center mt-4">
+              {STACKS__DATA.map((item, index) => (
                 <motion.li
+                  key={index}
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 1, delay: index * 0.2 }}
                   viewport={{ once: true }}
-                  className=" text-white text-[13px] md:text-[17px]  lg:text-lg 
-                lg:text-[16px] flex items-center"
+                  className=" text-white text-[13px] md:text-[17px] lg:text-[16px] "
                 >
                   {" "}
                   <span className="inline-block px-1 text-yellow">
@@ -69,8 +79,8 @@ const About = (props: Props) => {
                   </span>
                   {item}
                 </motion.li>
-              </ul>
-            ))}
+              ))}
+            </ul>
           </motion.div>
         </div>
 
@@ -88,7 +98,7 @@ const About = (props: Props) => {
                 transition={{ duration: 1.5, delay: index * 0.3 }}
                 viewport={{ once: true }}
                 key={index}
-                className="relative group"
+                className="relative group flex"
               >
                 <div
                   className=" absolute inset-0.5 bg-gradient-to-r from-[#0ddd8643] to-[#2e91cb]
@@ -122,7 +132,7 @@ const About = (props: Props) => {
         animate="visible"
         drag
         dragConstraints={constraintRef}
-        className="absolute w-[5%] h-[5%] opacity-50 bg-gradient-to-r from-[#0ddd8645] to-[#0df1e2] top-32 lg:top-40  
+        className="absolute w-[5%] h-[5%] opacity-70 bg-gradient-to-r from-[#0ddd8645] to-[#0df1e2] top-32 lg:top-40  
         lg:left-[35%]  blur-3xl rounded-full cursor-pointer"
       ></motion.div>
     </div>

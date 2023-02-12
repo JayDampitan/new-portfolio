@@ -107,7 +107,7 @@ const Hero = (props: Props) => {
         animate="visible"
         drag
         dragConstraints={constrainRef}
-        className="absolute w-[8%] h-[10%] bg-blue-300 top-36 left-[25%]  
+        className="absolute w-[8%] h-[10%] bg-blue-300 top-36 opacity-30 left-[25%]  
         blur-3xl  rounded-full cursor-pointer"
       ></motion.div>
 
