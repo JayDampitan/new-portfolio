@@ -50,7 +50,6 @@ export const otherTitleVariant = {
 export const cardHoverVariant = {
   hover: {
     opacity: 1,
-    y: -10,
     transition: {
       duration: .2
     }

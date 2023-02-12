@@ -20,15 +20,15 @@ const Work = (props: Props) => {
       ref={constrainRef}
       className="h-auto flex justify-center pt-16 items-start w-full bg-darkGrey relative"
     >
-      <div className="max-w-[1750px] mx-auto w-full flex flex-col px-6 lg:pt-20">
+      <div className="max-w-[1750px] mx-auto w-full flex flex-col  lg:pt-20 px-3">
         <TitleSection title="some chosen work" />
         <div>
           <div className="flex flex-col lg:flex-row mt-11  items-center justify-center">
             <Card />
           </div>
 
-          {/* -------start of other projects---------- */}
-          <div className="flex flex-col text-white mx-auto max-w-[1200px] items-center justify-center mt-10">
+          {/* -------start of game projects---------- */}
+          <div className="flex flex-col text-white mx-auto max-w-[1750px] items-center justify-center mt-10 ">
             <motion.h3
               variants={otherTitleVariant}
               initial="hidden"
@@ -36,9 +36,9 @@ const Work = (props: Props) => {
               viewport={{ once: true }}
               className="lg:text-2xl py-2 my-9 border-b border-yellow"
             >
-              other note-worhty projects
+              some game projects
             </motion.h3>
-            <div className="flex flex-col lg:flex-row mt-11 gap-3">
+            <div className="flex flex-col justify-center lg:flex-row mt-11 gap-3">
               <OtherWorks />
             </div>
           </div>
@@ -75,7 +75,7 @@ const Work = (props: Props) => {
         animate="visible"
         drag
         dragConstraints={constrainRef}
-        className="absolute w-[5%] h-[5%] bg-gradient-to-r  from-[#aa03ac2f] to-[#a335f6] top-32 right-[35%] blur-3xl opacity-60 rounded-full cursor-pointer"
+        className="absolute w-[5%] h-[5%] bg-gradient-to-r from-[#aa03ac2f] to-[#a335f6] top-32 right-[35%] blur-3xl opacity-70 rounded-full cursor-pointer"
       ></motion.div>
     </div>
   );

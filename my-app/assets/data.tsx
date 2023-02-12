@@ -1,4 +1,3 @@
-
 export const NAV__LINKS = [
   {
     path: "/",
@@ -18,14 +17,6 @@ export const NAV__LINKS = [
   },
 ];
 
-export const ABOUT__DATA = [
-  `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Distinctio temporibus et vel praesentium harum. Eveniet quisquam
-ipsa assumenda omnis inventore, ex aspernatur excepturi? Ab, velit
-facere? Dolorem, adipisci ipsam alias magnam optio incidunt iste
-sit dignissimos aliquam numquam sequi eligendi dolorum veniam
-tenetur voluptas laboriosam illo necessitatibus porro ab eos?`,
-];
 
 export const STACKS__DATA = [
   "javascript",
@@ -36,20 +27,23 @@ export const STACKS__DATA = [
   "framer motion",
   "apollo client/server",
   "graphql",
+  "c#"
 ];
 
 export const SERVICES__DATA = [
   {
     skill: "web/app development",
-    description: "provides web and app development services with unique, clean, and modern designs.",
+    description:
+      "Create web and mobile applications with the latest technologies and a modern approach.",
   },
   {
-    skill: "ui/ux",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, minima.",
+    skill: "ui/ux design",
+    description:
+      "Unique design with main focus on usability, user experience, and user research.",
   },
   {
     skill: "game development",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, minima.",
-  }
+    description:
+      "Create and design fun and exciting games made with Untiy engine.",
+  },
 ];
-
