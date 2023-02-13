@@ -26,7 +26,7 @@ const Navbar = (props: Props) => {
     >
       <div className="max-w-[1750px] text-gray-400 m-auto flex justify-between items-center px-4 lg:px-20 py-6">
         <Link to="/" spy={true} smooth={true} offset={0} duration={500}>
-          <h1 className="text-3xl md:text-4xl font-bold text-white cursor-pointer">
+          <h1 className="text-3xl  font-bold text-white cursor-pointer md:text-4xl">
             jd<span className="text-yellow">.</span>
           </h1>
         </Link>

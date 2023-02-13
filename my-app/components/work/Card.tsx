@@ -10,7 +10,7 @@ type Props = {};
 
 const Card = (props: Props) => {
   return (
-    <div className="gap-2 flex-wrap flex flex-col lg:flex-row items-stretch justify-center mt-7">
+    <div className="gap-2 flex-wrap flex flex-col items-stretch justify-center mt-7 lg:flex-row ">
       {WORK__DATA.map((item, index) => (
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,8 +20,8 @@ const Card = (props: Props) => {
           transition={{ duration: 1, delay: index * 0.2 }}
           viewport={{ once: true }}
           key={index}
-          className={` ${item.background} text-white rounded-lg  w-full lg:w-[40%] py-4 lg:py-8 px-10 
-          lg:px-16 lg:pr-20 flex items-stretch justify-between flex-col cursor-pointer`}
+          className={` ${item.background} text-white rounded-lg  w-full lg:w-[40%] py-4 px-10 
+           flex items-stretch justify-between flex-col cursor-pointer lg:py-8 lg:px-16 lg:pr-20`}
         >
           <h2 className="lg:text-2xl font-bold border-b border-white py-4">
             {item.title}
