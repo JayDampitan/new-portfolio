@@ -46,7 +46,7 @@ const OtherWorks = (props: Props) => {
               ))}
             </div>
             <div className="py-4 flex lg:py-6 gap-3">
-              <button
+              {item.github ? <button
                 className="border border-white py-1 px-3 group lg:px-4 
             rounded-full text-sm flex items-center hover:bg-white hover:text-darkGrey 
             duration-300 hover:-translate-y-1"
@@ -58,7 +58,7 @@ const OtherWorks = (props: Props) => {
                 <span className="inline-block ml-2">
                   <BsArrowUpRight className="group-hover:rotate-45 duration-200" />
                 </span>
-              </button>
+              </button> : null}
               {item.launch ? (
                 <button
                   className="border border-white py-1 px-3 group lg:px-4 

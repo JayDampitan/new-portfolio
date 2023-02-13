@@ -36,7 +36,7 @@ const Work = (props: Props) => {
               viewport={{ once: true }}
               className="lg:text-2xl py-2 my-9 border-b border-yellow"
             >
-              some game projects
+              mini games
             </motion.h3>
             <div className="flex flex-col justify-center lg:flex-row mt-11 gap-3">
               <OtherWorks />
