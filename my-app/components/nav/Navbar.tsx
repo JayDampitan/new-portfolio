@@ -11,7 +11,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState<string>("");
 
   const handleNav = () => {
     setNavbarOpen(!navbarOpen);
@@ -34,8 +34,8 @@ const Navbar = (props: Props) => {
           {NAV__LINKS.map((item, index) => (
             <li
               key={index}
-              className={`relative  nav-hover ${active === item && "active"}`}
-              onClick={() => setActive(item)}
+              className={`relative  nav-hover ${active === item.path && "active"}`}
+              onClick={() => setActive(item.path)}
             >
               <Link
                 className="flex text-white text-xl xl:text-lg cursor-pointer"
