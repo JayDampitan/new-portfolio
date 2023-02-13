@@ -51,13 +51,14 @@ const OtherWorks = (props: Props) => {
             rounded-full text-sm flex items-center hover:bg-white hover:text-darkGrey 
             duration-300 hover:-translate-y-1"
               >
-                <a href={item.github} target="_blank">
+                <a href={item.github} target="_blank" className="flex items-center">
                   {" "}
                   github
-                </a>
+               
                 <span className="inline-block ml-2">
                   <BsArrowUpRight className="group-hover:rotate-45 duration-200" />
                 </span>
+                </a>
               </button> : null}
               {item.launch ? (
                 <button
@@ -65,13 +66,14 @@ const OtherWorks = (props: Props) => {
               rounded-full text-sm flex items-center hover:bg-white hover:text-darkGrey 
               duration-300 hover:-translate-y-1"
                 >
-                  <a href={item.launch} target="_blank">
+                  <a href={item.launch} className="flex items-center" target="_blank">
                     {" "}
                     launch
-                  </a>
+                 
                   <span className="inline-block ml-2">
                     <BsArrowUpRight className="group-hover:rotate-45 duration-200" />
                   </span>
+                  </a>
                 </button>
               ) : null}
             </div>
