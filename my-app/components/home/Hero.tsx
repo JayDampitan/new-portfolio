@@ -32,8 +32,8 @@ const Hero = (props: Props) => {
           className=" md:text-start flex flex-col "
         >
           <h1
-            className="text-3xl sm:text-6xl lg:text-9xl border-b
-           border-yellow font-bold text-white pb-5 md:pb-10"
+            className="text-3xl  lg:text-9xl border-b
+           border-yellow font-bold text-white pb-5 md:pb-10 sm:text-6xl"
           >
             jay dampitan
           </h1>
@@ -60,9 +60,9 @@ const Hero = (props: Props) => {
               rounded-full blur opacity-0 group-hover:opacity-60"></div>
               <button
                 className="text-darkGrey relative bg-white group text-center 
-            border border-white lg:text-2xl px-3 py-1 lg:px-6 lg:py-2 
+            border border-white px-3 py-1 lg:py-2 
             rounded-full hover:text-orange-200 hover:bg-darkGrey hover:border-orange-400 
-            transition ease-linear"
+            transition ease-linear lg:text-2xl lg:px-6"
               >
                 <Link
                   to="contact"
@@ -73,7 +73,7 @@ const Hero = (props: Props) => {
                 >
                   let's talk{" "}
                   <span>
-                    <BsArrowUpRight className="ml-1 inline group-hover:rotate-45  duration-500" />
+                    <BsArrowUpRight className="ml-1 duration-500 inline group-hover:rotate-45" />
                   </span>
                 </Link>
               </button>
@@ -90,7 +90,7 @@ const Hero = (props: Props) => {
         drag
         dragConstraints={constrainRef}
         className="absolute w-[8%] h-[10%] bg-white top-60 right-11 
-        lg:right-72 blur-3xl rounded-full cursor-pointer"
+         blur-3xl rounded-full cursor-pointer lg:right-72"
       ></motion.div>
       <motion.div
         variants={yellowVariant}
