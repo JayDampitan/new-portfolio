@@ -6,7 +6,7 @@ import { STACKS__DATA, SERVICES__DATA } from "../../assets/data";
 import { AiOutlineRight } from "react-icons/ai";
 import { SiMaterialdesignicons } from "react-icons/si";
 import { BsGlobe } from "react-icons/bs";
-import { FaGamepad } from "react-icons/fa"
+import { FaGamepad } from "react-icons/fa";
 import {
   whiteVariant,
   descriptionVariant,
@@ -18,7 +18,6 @@ type Props = {};
 const icons = [BsGlobe, SiMaterialdesignicons, FaGamepad];
 
 const About = (props: Props) => {
-
   const constraintRef = useRef(null);
   return (
     <div
@@ -45,7 +44,12 @@ const About = (props: Props) => {
               California. I started my programming journey over 2 years ago
               after taking{" "}
               <span className="text-yellow hover:border-b hover:border-yellow">
-                <a className="" target="_blank" href="https://bitwiseindustries.com/">
+                <a
+                  rel="noreferrer"
+                  className=""
+                  target="_blank"
+                  href="https://bitwiseindustries.com/"
+                >
                   Bitwise Industries
                 </a>
               </span>{" "}
@@ -61,7 +65,7 @@ const About = (props: Props) => {
           lg:pt-4  lg:max-w-[600px]"
           >
             <p className="border-b border-yellow text-center pb-1 text-sm md:text-[17px] lg:text-lg ">
-              Here are a few technologies I've been working with lately :
+              {`Here are a few technologies I've been working with lately:`}
             </p>
             <ul className="flex items-center flex-wrap gap-4 justify-center mt-4">
               {STACKS__DATA.map((item, index) => (

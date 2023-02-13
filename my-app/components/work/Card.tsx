@@ -48,13 +48,17 @@ const Card = (props: Props) => {
             rounded-full text-sm flex items-center hover:bg-white hover:text-darkGrey 
             duration-300 hover:-translate-y-1"
             >
-              <a href={item.github} className="flex items-center" target="_blank">
+              <a
+                rel="noreferrer"
+                href={item.github}
+                className="flex items-center"
+                target="_blank"
+              >
                 {" "}
                 github
-             
-              <span className="inline-block ml-2">
-                <BsArrowUpRight className="group-hover:rotate-45 duration-200" />
-              </span>
+                <span className="inline-block ml-2">
+                  <BsArrowUpRight className="group-hover:rotate-45 duration-200" />
+                </span>
               </a>
             </button>
             {item.launch ? (
@@ -63,13 +67,17 @@ const Card = (props: Props) => {
               rounded-full text-sm flex items-center hover:bg-white hover:text-darkGrey 
               duration-300 hover:-translate-y-1"
               >
-                <a href={item.launch} className="flex items-center" target="_blank">
+                <a
+                  rel="noreferrer"
+                  href={item.launch}
+                  className="flex items-center"
+                  target="_blank"
+                >
                   {" "}
                   launch
-                
-                <span className="inline-block ml-2">
-                  <BsArrowUpRight className="group-hover:rotate-45 duration-200" />
-                </span>
+                  <span className="inline-block ml-2">
+                    <BsArrowUpRight className="group-hover:rotate-45 duration-200" />
+                  </span>
                 </a>
               </button>
             ) : null}

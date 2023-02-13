@@ -97,6 +97,7 @@ const Contact = (props: Props) => {
       >
         <p>designed and built by:</p>
         <a
+          rel="noreferrer"
           href="https://github.com/JayDampitan"
           target="_blank"
           className="text-yellow"

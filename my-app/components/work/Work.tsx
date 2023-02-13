@@ -63,7 +63,7 @@ const Work = (props: Props) => {
             viewport={{ once: true }}
             className="lg:text-2xl my-4"
           >
-            don't hesitate to ask
+            {`don't hesitate to ask`}
           </motion.h2>
         </div>
       </div>

@@ -58,7 +58,7 @@ export const OTHER__WORK__DATA = [
   {
     title: "argon assault (game)",
     description:
-      " Aliens are attacking earth! Equipped with the latest flight technology, help our hero fight alien attacks and prevent earths invation.",
+      " Help Admiral Slackbar fight alien bugs invading their planet. This game is made using Unity engine and C#.",
     background: "bg-gradient-to-r from-[#0ddd8645] to-[#0df1e2]",
     stacks: ["unity", "c#"],
     // github: "https://github.com/JayDampitan/Project-boost",

@@ -51,7 +51,7 @@ const OtherWorks = (props: Props) => {
             rounded-full text-sm flex items-center hover:bg-white hover:text-darkGrey 
             duration-300 hover:-translate-y-1"
               >
-                <a href={item.github} target="_blank" className="flex items-center">
+                <a rel="noreferrer" href={item.github} target="_blank" className="flex items-center">
                   {" "}
                   github
                
@@ -66,7 +66,7 @@ const OtherWorks = (props: Props) => {
               rounded-full text-sm flex items-center hover:bg-white hover:text-darkGrey 
               duration-300 hover:-translate-y-1"
                 >
-                  <a href={item.launch} className="flex items-center" target="_blank">
+                  <a rel="noreferrer" href={item.launch} className="flex items-center" target="_blank">
                     {" "}
                     launch
                  

@@ -71,7 +71,7 @@ const Hero = (props: Props) => {
                   offset={50}
                   duration={500}
                 >
-                  let's talk{" "}
+                 {`let's talk`}
                   <span>
                     <BsArrowUpRight className="ml-1 duration-500 inline group-hover:rotate-45" />
                   </span>
