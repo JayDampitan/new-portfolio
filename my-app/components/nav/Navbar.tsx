@@ -34,7 +34,9 @@ const Navbar = (props: Props) => {
           {NAV__LINKS.map((item, index) => (
             <li
               key={index}
-              className={`relative  nav-hover ${active === item.path && "active"}`}
+              className={`relative  nav-hover ${
+                active === item.path && "active"
+              }`}
               onClick={() => setActive(item.path)}
             >
               <Link
@@ -50,6 +52,7 @@ const Navbar = (props: Props) => {
             </li>
           ))}
           <a
+            rel="noreferrer"
             target="_blank"
             href="https://drive.google.com/file/d/1OptG0c1mYhtMQv0F9oJDsuirrOIqRgml/view?usp=sharing"
             className=" border-l-[1px] border-yellow px-4 hover:text-light-brown z-40"
@@ -60,6 +63,7 @@ const Navbar = (props: Props) => {
           </a>
           <div className="text-xl flex text-white ">
             <a
+              rel="noreferrer"
               className="hover:scale-125"
               href="https://www.linkedin.com/in/jay-dampitan1985/"
               target="_blank"
@@ -67,6 +71,7 @@ const Navbar = (props: Props) => {
               <AiFillLinkedin className="m-2" />
             </a>
             <a
+            rel="noreferrer"
               className="hover:scale-125"
               href="https://github.com/JayDampitan"
               target="_blank"
@@ -110,6 +115,7 @@ const Navbar = (props: Props) => {
             ))}
             <div className="h-[1px] w-[50px] bg-white flex justify-self-center my-3"></div>
             <a
+              rel="noreferrer"
               href="https://drive.google.com/file/d/1OptG0c1mYhtMQv0F9oJDsuirrOIqRgml/view?usp=sharing"
               target="_blank"
               className="py-1 text-2xl px-2 hover:white text-white"
@@ -117,10 +123,13 @@ const Navbar = (props: Props) => {
               resumé
             </a>
             <div className="text-xl flex text-white mt-3">
-              <a href="https://www.linkedin.com/in/jay-dampitan1985/">
+              <a
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/jay-dampitan1985/"
+              >
                 <AiFillLinkedin className="m-2" />
               </a>
-              <a href="https://github.com/JayDampitan">
+              <a rel="noreferrer" href="https://github.com/JayDampitan">
                 <AiFillGithub className="m-2" />
               </a>
             </div>
