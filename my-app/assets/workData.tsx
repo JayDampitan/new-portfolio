@@ -36,8 +36,7 @@ export const WORK__DATA = [
   },
   // {
   //   title: "neumorphic portfolio",
-  //   description:
-  //     "A minimal portfolio design using neumorphism appraoch",
+  //   description: "Towards the end of the apprenticeship warm up session, I created a minimalistic neumorphic for a simple portfolio.",
   //   background: "bg-gradient-to-r from-[#595cff] to-[#9193f5]",
   //   stacks: ["react", "styled components"],
   //   launch: "https://jaydampitan.com/",
@@ -62,8 +61,8 @@ export const OTHER__WORK__DATA = [
       " Aliens are attacking earth! Equipped with the latest flight technology, help our hero fight alien attacks and prevent earths invation.",
     background: "bg-gradient-to-r from-[#0ddd8645] to-[#0df1e2]",
     stacks: ["unity", "c#"],
-    github: "https://github.com/JayDampitan/Project-boost",
+    // github: "https://github.com/JayDampitan/Project-boost",
     launch:
-      "https://sharemygame.com/@JayDampitan/jay-s-project-boost-from-unity-3d-course",
+      "https://sharemygame.com/@JayDampitan/argon-assault",
   },
 ];
