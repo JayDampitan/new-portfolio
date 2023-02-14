@@ -26,8 +26,8 @@ const About = (props: Props) => {
       flex justify-center relative px-4 pt-2 lg:pt-8"
     >
       <div
-        className=" h-screen max-w-[1700px] justify-center 
-          px-4 w-full flex items-center flex-col border-b-[1px] border-yellow lg:pb-11"
+        className=" h-auto max-w-[1700px] justify-center 
+          px-4 w-full flex items-center flex-col border-b-[1px] border-yellow pb-11"
       >
         <TitleSection title="something about me" />
 
@@ -67,7 +67,7 @@ const About = (props: Props) => {
             <p className="border-b border-yellow text-center pb-1 text-sm md:text-[17px] lg:text-lg ">
               {`Here are a few technologies I've been working with lately:`}
             </p>
-            <ul className="flex items-center flex-wrap gap-4 justify-center mt-4">
+            <ul className="flex items-center flex-wrap lg:gap-4 justify-center mt-4">
               {STACKS__DATA.map((item, index) => (
                 <motion.li
                   key={index}
@@ -91,7 +91,7 @@ const About = (props: Props) => {
         {/* ---------- services offered -------------- */}
         <div
           className=" flex flex-col cursor-default gap-4 mt-4 md:mt-6 lg:my-14 
-                    md:w-[70%] lg:w-2/3 lg:flex-row "
+                    md:w-[70%] lg:w-2/3 sm:flex-row"
         >
           {SERVICES__DATA.map((item, index) => {
             const Icon = icons[index];
@@ -102,7 +102,7 @@ const About = (props: Props) => {
                 transition={{ duration: 1.5, delay: index * 0.3 }}
                 viewport={{ once: true }}
                 key={index}
-                className="relative group flex"
+                className="relative group flex sm:w-1/3"
               >
                 <div
                   className=" absolute inset-0.5 bg-gradient-to-r from-[#ffb7005d] to-[#eb412ad2]
@@ -110,16 +110,16 @@ const About = (props: Props) => {
                 group-hover:duration-200"
                 ></div>
                 <div
-                  className="relative bg-darkGrey group text-white rounded-md  p-1 
+                  className="relative w-full bg-darkGrey group text-white rounded-md  p-1 
                      border border-white text-center flex 
-                    flex-col items-center hover:border-orange-300 hover:-translate-y-1 duration-200 lg:p-3"
+                    flex-col justify-center items-center hover:border-orange-300 hover:-translate-y-1 duration-200 lg:p-3"
                 >
                   <div className="text-sm font-semibold flex items-center mb-2 gap-2 lg:text-lg">
                     <Icon />
                     <h4>{item.skill}</h4>
                   </div>
 
-                  <p className="text-[12px] md:text-[17px] lg:text-sm">
+                  <p className="text-[13px] lg:text-sm">
                     {item.description}
                   </p>
                 </div>

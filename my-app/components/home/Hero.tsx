@@ -22,8 +22,8 @@ const Hero = (props: Props) => {
       className=" bg-darkGrey w-full h-screen flex relative"
     >
       <div
-        className=" max-w-[1700px] flex h-screen w-full flex-col 
-      mx-auto justify-center items-center md:px-20 lg:items-start lg:mt-11"
+        className="max-w-[1700px] flex h-screen w-full flex-col 
+      mx-auto justify-center items-center lg:pl-28  lg:items-start lg:mt-11"
       >
         <motion.div
           variants={nameVariant}

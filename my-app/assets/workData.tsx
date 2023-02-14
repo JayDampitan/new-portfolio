@@ -2,7 +2,7 @@ export const WORK__DATA = [
   {
     title: "poké palace",
     description:
-      "A web application where you can buy, win and collect all Pokémons, recieve badges for completing tasks, and a chance to experience an online slot machine only for Pokemons.",
+      "A web application where you can buy, win and collect Pokémons, receive badges for completing certain tasks, and experience an online slot machine only for Pokémon.",
     background: " bg-gradient-to-r from-[#ffb7005d] to-[#eb412ad2]",
     stacks: ["react", "redux", "sass"],
     github: "https://github.com/gonzalespaulb/Pokemon-App",
@@ -19,7 +19,7 @@ export const WORK__DATA = [
   {
     title: "movie app",
     description:
-      "A warmup project to start the apprenticeship program. Reactoad Movie App is a IMDB clone where you can search for your favorite movie and find out more information about them such as ratings, actors and more.",
+      "A warmup project to start the apprenticeship program. Reactoad Movie App is an IMDB clone where you can search for your favorite movie and find out more information about them such as ratings, actors, and more.",
     background: "bg-gradient-to-r from-[#aa03ac2f] to-[#9305ffeb]",
     stacks: ["react", "vanilla javascript"],
     launch: "https://reactoads-movie-app-7c45e.web.app/",
@@ -48,7 +48,7 @@ export const OTHER__WORK__DATA = [
   {
     title: "project boost",
     description:
-      "A game made with C# and Unity. Our hero is stuck in an isolated planet. To get home, he needs to pass obstables and get to the extraction points.",
+      "A game made with C# and Unity. Our hero is stuck on an isolated planet. He needs to pass obstacles and get to the extraction points to get home.",
     background: "bg-gradient-to-r from-[#0ddd8645] to-[#0df1e2]",
     stacks: ["unity", "c#"],
     github: "https://github.com/JayDampitan/Project-boost",

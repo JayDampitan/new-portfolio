@@ -10,7 +10,7 @@ type Props = {};
 
 const Card = (props: Props) => {
   return (
-    <div className="gap-2 flex-wrap flex flex-col items-stretch justify-center mt-7 lg:flex-row ">
+    <div className="gap-2 px-2 flex-wrap flex flex-col items-stretch justify-center mt-7 lg:flex-row ">
       {WORK__DATA.map((item, index) => (
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ const Card = (props: Props) => {
           <p className="py-3 lg:py-6 text-sm lg:text-[16px] lg:pr-10 lg:leading-6">
             {item.description}
           </p>
-          <div className="flex flex-wrap gap-1">
+          <div className="flex flex-wrap sm:gap-1">
             {item.stacks.map((stack, index) => (
               <div
                 key={index}

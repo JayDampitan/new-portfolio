@@ -8,7 +8,7 @@ type Props = {
 const TitleSection = ({ title }: Props) => {
   return (
     <>
-      <div className=" text-white lg:text-2xl flex items-center justify-center w-full pr-10">
+      <div className=" text-white text-[15px] lg:text-2xl flex items-center justify-center w-full pr-10">
         <div className=" flex items-center gap-14">
           <motion.h1
             variants={titleVariant}
