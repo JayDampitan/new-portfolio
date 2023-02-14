@@ -34,16 +34,16 @@ export const SERVICES__DATA = [
   {
     skill: "web/app development",
     description:
-      "Create web and mobile applications with the latest technologies and a modern approach.",
+      "Create web and mobile apps with the latest tech and a modern approach.",
   },
   {
     skill: "ui/ux design",
     description:
-      "Unique design with main focus on usability, user experience, and user research.",
+      "Unique and modern designs with main focus on usability, user experience, and user research.",
   },
   {
     skill: "game development",
     description:
-      "Create and design fun and exciting games made with Untiy engine.",
+      "Create and design fun and exciting games made with Unity engine.",
   },
 ];

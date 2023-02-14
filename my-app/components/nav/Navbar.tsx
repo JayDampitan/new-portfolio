@@ -24,13 +24,13 @@ const Navbar = (props: Props) => {
       animate="visible"
       className="fixed left-0 bg-transparent top-0 w-full z-10 ease-in duration-500"
     >
-      <div className="max-w-[1750px] text-gray-400 m-auto flex justify-between items-center px-4 lg:px-20 py-6">
+      <div className="max-w-[1750px] text-gray-400 m-auto flex justify-between items-center px-10 lg:px-28 py-6">
         <Link to="/" spy={true} smooth={true} offset={0} duration={500}>
           <h1 className="text-3xl  font-bold text-white cursor-pointer md:text-4xl">
             jd<span className="text-yellow">.</span>
           </h1>
         </Link>
-        <ul className="hidden sm:flex items-center justify-center gap-4">
+        <ul className="hidden sm:flex items-center justify-center gap-4 text">
           {NAV__LINKS.map((item, index) => (
             <li
               key={index}
@@ -40,7 +40,7 @@ const Navbar = (props: Props) => {
               onClick={() => setActive(item.path)}
             >
               <Link
-                className="flex text-white text-xl xl:text-lg cursor-pointer"
+                className="flex text-white  lg:text-lg cursor-pointer"
                 to={`${item.path}`}
                 spy={true}
                 smooth={true}
@@ -57,7 +57,7 @@ const Navbar = (props: Props) => {
             href="https://drive.google.com/file/d/1OptG0c1mYhtMQv0F9oJDsuirrOIqRgml/view?usp=sharing"
             className=" border-l-[1px] border-yellow px-4 hover:text-light-brown z-40"
           >
-            <div className="text-white text-lg xl:text-lg relative nav-hover">
+            <div className="text-white lg:text-lg relative nav-hover">
               resumé
             </div>
           </a>
