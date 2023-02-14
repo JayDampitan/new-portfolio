@@ -75,7 +75,7 @@ const Work = (props: Props) => {
         animate="visible"
         drag
         dragConstraints={constrainRef}
-        className="absolute w-[5%] h-[5%] bg-gradient-to-r from-[#aa03ac2f] to-[#a335f6] top-32 right-[35%] blur-3xl opacity-70 rounded-full cursor-pointer"
+        className="absolute w-[5%] h-[5%] bg-white top-32 right-[35%] blur-3xl opacity-70 rounded-full cursor-pointer"
       ></motion.div>
     </div>
   );

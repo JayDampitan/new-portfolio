@@ -15,9 +15,9 @@ const ToTop = (props: Props) => {
         to="/"
         spy={true}
         smooth={true}
-        offset={50}
+        offset={0}
         duration={500}
-        className="text-white text-sm  lg:text-xl font-thin scroll cursor-pointer"
+        className="text-white text-sm  lg:text-lg font-thin scroll cursor-pointer"
       >
         back to top
       </Link>
