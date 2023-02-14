@@ -95,16 +95,16 @@ const Contact = (props: Props) => {
         viewport={{ once: true }}
         className="absolute text-white bottom-4 left-4 text-[10px] md:text-[14px] md:left-10"
       >
-        <p>designed and built by:</p>
+        <p>designed and built by: <span className="hidden bg-gradient-to-r from-[#0092B6] to-[#0D41E1]"></span></p>
         <a
           rel="noreferrer"
           href="https://github.com/JayDampitan"
           target="_blank"
           className="text-yellow"
         >
-          jay dampitan
+          jay dampitan <span className="hidden bg-gradient-to-r from-[#0ddd8645] to-[#0df1e2]"></span>
         </a>
-        <p>2023</p>
+        <p>2023 <span className="hidden bg-gradient-to-r from-[#aa03ac2f] to-[#9305ffeb]"></span></p>
       </motion.div>
     </div>
   );

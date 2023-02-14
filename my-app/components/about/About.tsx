@@ -105,14 +105,14 @@ const About = (props: Props) => {
                 className="relative group flex"
               >
                 <div
-                  className=" absolute inset-0.5 bg-gradient-to-r from-[#0ddd8643] to-[#2e91cb]
+                  className=" absolute inset-0.5 bg-gradient-to-r from-[#ffb7005d] to-[#eb412ad2]
                 rounded-lg blur opacity-0 group-hover:opacity-50 transition duration-1000 
                 group-hover:duration-200"
                 ></div>
                 <div
                   className="relative bg-darkGrey group text-white rounded-md  p-1 
                      border border-white text-center flex 
-                    flex-col items-center hover:border-green-300 hover:-translate-y-1 duration-200 lg:p-3"
+                    flex-col items-center hover:border-orange-300 hover:-translate-y-1 duration-200 lg:p-3"
                 >
                   <div className="text-sm font-semibold flex items-center mb-2 gap-2 lg:text-lg">
                     <Icon />
@@ -136,7 +136,7 @@ const About = (props: Props) => {
         animate="visible"
         drag
         dragConstraints={constraintRef}
-        className="absolute w-[5%] h-[5%] opacity-70 bg-gradient-to-r from-[#0ddd8645] to-[#0df1e2] top-32   
+        className="absolute w-[5%] h-[5%] opacity-70 bg-orange-200 top-32   
           blur-3xl rounded-full cursor-pointer lg:top-40 lg:left-[35%]"
       ></motion.div>
     </div>

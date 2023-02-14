@@ -19,12 +19,12 @@ const OtherWorks = (props: Props) => {
           className="w-full lg:w-1/3 items-stretch flex relative group"
         >
           <div
-            className="absolute inset-0.5 bg-gradient-to-r from-[#aa03ac2f] to-[#9305ffeb] 
+            className="absolute inset-0.5 bg-gradient-to-r from-[#ffb7005d] to-[#eb412ad2] 
           rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
           ></div>
           <div
             className={`bg-darkGrey relative text-white flex flex-col justify-between py-4 px-4 lg:px-10 border border-white 
-            duration-200 hover:-translate-y-1 cursor-pointer rounded-lg hover:border-purple-400`}
+            duration-200 hover:-translate-y-1 cursor-pointer rounded-lg hover:border-orange-300`}
           >
             <h2 className="lg:text-2xl text-white font-bold border-b border-yellow py-2">
               {item.title}

@@ -46,7 +46,7 @@ export const WORK__DATA = [
 
 export const OTHER__WORK__DATA = [
   {
-    title: "project boost (game)",
+    title: "project boost",
     description:
       "A game made with C# and Unity. Our hero is stuck in an isolated planet. To get home, he needs to pass obstables and get to the extraction points.",
     background: "bg-gradient-to-r from-[#0ddd8645] to-[#0df1e2]",
@@ -56,7 +56,7 @@ export const OTHER__WORK__DATA = [
       "https://sharemygame.com/@JayDampitan/jay-s-project-boost-from-unity-3d-course",
   },
   {
-    title: "argon assault (game)",
+    title: "argon assault",
     description:
       " Help Admiral Slackbar fight alien bugs invading their planet. This game is made using Unity engine and C#.",
     background: "bg-gradient-to-r from-[#0ddd8645] to-[#0df1e2]",
