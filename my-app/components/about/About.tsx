@@ -64,9 +64,15 @@ const About = (props: Props) => {
             className="flex-wrap max-w-[500px] text-white justify-center items-center flex flex-col my-1 pt-3 
           lg:pt-4  lg:max-w-[600px]"
           >
-            <p className="border-b border-yellow text-center pb-1 text-sm md:text-[17px] lg:text-lg ">
+            <motion.p
+              variants={descriptionVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="border-b border-yellow text-center pb-1 text-sm md:text-[17px] lg:text-lg "
+            >
               {`Here are a few technologies I've been working with lately:`}
-            </p>
+            </motion.p>
             <ul className="flex items-center flex-wrap lg:gap-4 justify-center mt-4">
               {STACKS__DATA.map((item, index) => (
                 <motion.li
@@ -119,9 +125,7 @@ const About = (props: Props) => {
                     <h4>{item.skill}</h4>
                   </div>
 
-                  <p className="text-[13px] lg:text-sm">
-                    {item.description}
-                  </p>
+                  <p className="text-[13px] lg:text-sm">{item.description}</p>
                 </div>
               </motion.div>
             );

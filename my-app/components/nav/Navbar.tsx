@@ -1,27 +1,50 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NAV__LINKS } from "../../assets/data";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { containerVariant } from "./navVariants";
+import { containerVariant, navVariant } from "./navVariants";
 
 type Props = {};
 
 const Navbar = (props: Props) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [active, setActive] = useState<string>("");
+  const [navVisible, setNavVisible] = useState(true)
 
   const handleNav = () => {
     setNavbarOpen(!navbarOpen);
   };
 
+  useEffect(() => {
+    window.addEventListener("scroll", controlNav);
+    return () => {
+      window.removeEventListener("scroll", controlNav);
+    };
+  }, []);
+
+  const controlNav = () => {
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener("scroll", () => {
+      if (window.innerWidth > 500) {
+        if (lastScrollY < window.scrollY) {
+          setNavVisible(false);
+        } else {
+          setNavVisible(true);
+        }
+        lastScrollY = window.scrollY;
+      }
+    });
+  };
+
   return (
     <motion.nav
-      variants={containerVariant}
-      initial="hidden"
-      animate="visible"
+    variants={navVariant}
+    initial="hidden"
+    animate={navVisible ? "navVisible" : "navHide"}
       className="fixed left-0 bg-transparent top-0 w-full z-10 ease-in duration-500"
     >
       <div className="max-w-[1750px] text-gray-400 m-auto flex justify-between items-center px-10 lg:px-28 py-6">
