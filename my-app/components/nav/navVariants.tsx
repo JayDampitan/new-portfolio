@@ -10,3 +10,21 @@ export const containerVariant = {
     },
   },
 };
+
+export const navVariant = {
+  hidden: {
+    y: "-100%",
+  },
+  navVisible: {
+    y: ["-100%", "0%"],
+    transition: {
+      duration: 0.3,
+    },
+  },
+  navHide: {
+    y: ["0%", "-100%"],
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
