@@ -73,7 +73,7 @@ const Hero = (props: Props) => {
                 >
                  {`let's talk`}
                   <span>
-                    <BsArrowUpRight className="ml-1 duration-500 inline group-hover:rotate-45" />
+                    <BsArrowUpRight className="ml-2 duration-500 inline group-hover:rotate-45" />
                   </span>
                 </Link>
               </button>

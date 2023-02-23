@@ -77,7 +77,7 @@ const Navbar = (props: Props) => {
           <a
             rel="noreferrer"
             target="_blank"
-            href="https://drive.google.com/file/d/1OptG0c1mYhtMQv0F9oJDsuirrOIqRgml/view?usp=sharing"
+            href="https://drive.google.com/file/d/1I5LloimtrNyyMhLLwNfpTuGMkSALxxMm/view?usp=sharing"
             className=" border-l-[1px] border-yellow px-4 hover:text-light-brown z-40"
           >
             <div className="text-white lg:text-lg relative nav-hover">
@@ -139,7 +139,7 @@ const Navbar = (props: Props) => {
             <div className="h-[1px] w-[50px] bg-white flex justify-self-center my-3"></div>
             <a
               rel="noreferrer"
-              href="https://drive.google.com/file/d/1OptG0c1mYhtMQv0F9oJDsuirrOIqRgml/view?usp=sharing"
+              href="https://drive.google.com/file/d/1I5LloimtrNyyMhLLwNfpTuGMkSALxxMm/view?usp=sharing"
               target="_blank"
               className="py-1 text-2xl px-2 hover:white text-white"
             >
