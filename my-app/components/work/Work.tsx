@@ -46,7 +46,7 @@ const Work = (props: Props) => {
         </div>
 
         {/* ---------- work ending title-------------- */}
-        <div className="flex items-center justify-center text-white flex-col mt-32 mb-12">
+        <div className="flex items-center justify-center text-white flex-col mt-32 ">
           <motion.h1
             variants={endingTitleVariant}
             initial="hidden"

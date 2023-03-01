@@ -35,12 +35,12 @@ export const WORK__DATA = [
     launch: "https://the-toad-tribune-659c7.web.app/",
   },
   // {
-  //   title: "neumorphic portfolio",
-  //   description: "Towards the end of the apprenticeship warm up session, I created a minimalistic neumorphic for a simple portfolio.",
+  //   title: "framer presentation",
+  //   description: "After learning about framer motion while creating my first portfolio, I introduced ",
   //   background: "bg-gradient-to-r from-[#595cff] to-[#9193f5]",
-  //   stacks: ["react", "styled components"],
-  //   launch: "https://jaydampitan.com/",
-  //   github: "https://github.com/JayDampitan/portfolio",
+  //   stacks: ["react", "styled components", "framer motion"],
+  //   launch: "https://reactoad-framer-demo.vercel.app/",
+  //   github: "https://github.com/krferrell/framer-motion",
   // },
 ];
 
