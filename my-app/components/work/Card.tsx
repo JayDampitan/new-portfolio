@@ -14,7 +14,7 @@ const Card = (props: Props) => {
       {WORK__DATA.map((item, index) => (
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 0.7, y: 0 }}
+          whileInView={{ opacity: 0.9, y: 0 }}
           variants={cardHoverVariant}
           whileHover="hover"
           transition={{ duration: 1, delay: index * 0.2 }}

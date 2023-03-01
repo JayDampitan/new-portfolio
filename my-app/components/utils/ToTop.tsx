@@ -19,7 +19,7 @@ const ToTop = (props: Props) => {
         duration={500}
         className="text-white text-sm  lg:text-lg font-thin scroll cursor-pointer"
       >
-        back to top
+        back to top <span className="hidden bg-gradient-to-r from-[#595cff] to-[#9193f5]"></span>
       </Link>
       <motion.div className="w-[1px] h-[80px] lg:h-[150px] bg-yellow"></motion.div>
     </motion.div>

@@ -42,7 +42,7 @@ const Contact = (props: Props) => {
         >
           <h2
             onClick={handleCopy}
-            className={`text-xl lg:text-4xl text-gray-400 
+            className={`text-xl lg:text-4xl text-gray-100 
           hover:text-white hover:scale-105 relative cursor-pointer transition ease-in duration-400
             after:content-['copied'] after:absolute after:text-[12px]
              after:text-purple-500 after:-top-9 after:right-28 after:bg-darkGrey after:px-1 after:rounded ${

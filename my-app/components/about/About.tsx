@@ -43,10 +43,10 @@ const About = (props: Props) => {
               Hello, my name is Jay Dampitan, a software developer from
               California. I started my programming journey over 2 years ago
               after taking{" "}
-              <span className="text-yellow hover:border-b hover:border-yellow">
+              <span className="text-yellow">
                 <a
                   rel="noreferrer"
-                  className=""
+                  className="relative bitwise-hover"
                   target="_blank"
                   href="https://bitwiseindustries.com/"
                 >
@@ -140,8 +140,8 @@ const About = (props: Props) => {
         animate="visible"
         drag
         dragConstraints={constraintRef}
-        className="absolute w-[5%] h-[5%] opacity-70 bg-orange-200 top-32   
-          blur-3xl rounded-full cursor-pointer lg:top-40 lg:left-[35%]"
+        className="absolute w-[5%] h-[5%] opacity-70 bg-orange-200 top-9  
+          blur-3xl rounded-full cursor-pointer lg:top-10 lg:left-[35%]"
       ></motion.div>
     </div>
   );
