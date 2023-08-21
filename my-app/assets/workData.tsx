@@ -9,12 +9,12 @@ export const WORK__DATA = [
     launch: "https://pokepalace-fa118.web.app/",
   },
   {
-    title: "kovvi",
+    title: "Ocular Emporium",
     description:
-      "Using disease.sh RestAPI, Kovvi is a mobile application that tracks COVID19 related data of a given location and presented in clean graph layout.",
+      "Using the Shopify platform. ocular emporium is an e-commerce store for optics and lens products such as telescopes and binoculars.",
     background: "bg-gradient-to-r from-[#0092B6] to-[#0D41E1]",
-    stacks: ["react native", "redux toolkit", "styled components", "expo"],
-    github: "https://github.com/BlackCubes/covidmap-react-native",
+    stacks: ["shopify", "liquid"],
+    launch: "https://ocularemporium.com/",
   },
   {
     title: "movie app",
