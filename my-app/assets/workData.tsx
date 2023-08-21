@@ -9,7 +9,7 @@ export const WORK__DATA = [
     launch: "https://pokepalace-fa118.web.app/",
   },
   {
-    title: "Ocular Emporium",
+    title: "ocular emporium",
     description:
       "Using the Shopify platform. ocular emporium is an e-commerce store for optics and lens products such as telescopes and binoculars.",
     background: "bg-gradient-to-r from-[#0092B6] to-[#0D41E1]",
