@@ -27,7 +27,9 @@ export const STACKS__DATA = [
   "framer motion",
   "apollo client/server",
   "graphql",
-  "c#"
+  "c#",
+  "liquid",
+  "Shopify"
 ];
 
 export const SERVICES__DATA = [

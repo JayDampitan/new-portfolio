@@ -5,6 +5,7 @@ import Link from "next/link";
 import { cardHoverVariant } from "./workVariants";
 import { BsArrowUpRight } from "react-icons/bs";
 import { AiOutlineRight } from "react-icons/ai";
+import mitt from "next/dist/shared/lib/mitt";
 
 type Props = {};
 
@@ -43,24 +44,26 @@ const Card = (props: Props) => {
             ))}
           </div>
           <div className="py-4 flex lg:py-6 gap-3">
-            <button
-              className="border border-white py-1 px-3 group lg:px-4 
+            {item.github ? (
+              <button
+                className="border border-white py-1 px-3 group lg:px-4 
             rounded-full text-sm flex items-center hover:bg-white hover:text-darkGrey 
             duration-300 hover:-translate-y-1"
-            >
-              <a
-                rel="noreferrer"
-                href={item.github}
-                className="flex items-center"
-                target="_blank"
               >
-                {" "}
-                github
-                <span className="inline-block ml-2">
-                  <BsArrowUpRight className="group-hover:rotate-45 duration-200" />
-                </span>
-              </a>
-            </button>
+                <a
+                  rel="noreferrer"
+                  href={item.github}
+                  className="flex items-center"
+                  target="_blank"
+                >
+                  {" "}
+                  github
+                  <span className="inline-block ml-2">
+                    <BsArrowUpRight className="group-hover:rotate-45 duration-200" />
+                  </span>
+                </a>
+              </button>
+            ) : null}
             {item.launch ? (
               <button
                 className="border border-white py-1 px-3 group lg:px-4 
