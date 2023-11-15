@@ -41,7 +41,7 @@ const About = (props: Props) => {
           >
             <p className="text-center text-white text-sm  px-2 lg:leading-loose md:text-[17px] lg:text-lg">
               Hello, my name is Jay Dampitan, a software developer from
-              California. I started my programming journey over 2 years ago
+              California. I started my programming journey over 3 years ago
               after taking{" "}
               <span className="text-yellow">
                 <a

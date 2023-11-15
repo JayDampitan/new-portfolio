@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .custom-product-desc{
+        color: #431800;
+        transform: translateX(-30px);
+        }
+        @media only screen and (max-width: 718px) {
+        .custom-product-desc{
+        transform: translateX(-5px);
+        }
+    }
+        
+        </style>
+        
+        <p class="custom-product-desc">
+         <span class="mylist">
+        <i class="fa-solid fa-truck fa-2xs"></i></span>  Free Shipping US Wide<br>
+         <span class="mylist"><i class="fa-solid fa-rotate-left fa-xs"></i></span> Easy 30 Day Returns<br>
+         <span class="mylist"><i class="fa-solid fa-tags fa-xs"></i></span>  Best Price Guarantee<br>
+         <span class="mylist"><i class="fa-brands fa-rocketchat fa-xs"></i></span> Expert Customer Service<br>
+        </p>
+</body>
+</html>
